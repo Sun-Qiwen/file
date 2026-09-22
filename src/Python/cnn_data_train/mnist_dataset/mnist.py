@@ -22,10 +22,10 @@ def load_mnist():
     # 先下载好 MNIST 数据集到本地，如果使用 python 代码下载，速度太慢了
     # 下载地址：http://yann.lecun.com/exdb/mnist/
     dataset = {}
-    dataset['train_img'] = load_img("./data_train/python_train/mnist_dataset/train-images-idx3-ubyte.gz")
-    dataset['train_label'] = load_label("./data_train/python_train/mnist_dataset/train-labels-idx1-ubyte.gz")
-    dataset['test_img'] = load_img("./data_train/python_train/mnist_dataset/t10k-images-idx3-ubyte.gz")
-    dataset['test_label'] = load_label("./data_train/python_train/mnist_dataset/t10k-labels-idx1-ubyte.gz")
+    dataset['train_img'] = load_img("./cnn_data_train/mnist_dataset/train-images-idx3-ubyte.gz")
+    dataset['train_label'] = load_label("./cnn_data_train/mnist_dataset/train-labels-idx1-ubyte.gz")
+    dataset['test_img'] = load_img("./cnn_data_train/mnist_dataset/t10k-images-idx3-ubyte.gz")
+    dataset['test_label'] = load_label("./cnn_data_train/mnist_dataset/t10k-labels-idx1-ubyte.gz")
     # 将图像转换成多维数组
     for key in ('train_img', 'test_img'):
         dataset[key] = dataset[key].reshape(-1, 1, 28, 28)
