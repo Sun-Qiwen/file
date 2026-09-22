@@ -1,7 +1,7 @@
 ----
 项目简历+复现步骤
 ----
-<project_name>/ 
+<project_name>/
 ├── README.md # 项目简介 + 复现步骤 
 ├── src/ # 设计源码（RTL / HLS / PS 侧软件） 
 ├── sim/ # 仿真或验证脚本与结果 
