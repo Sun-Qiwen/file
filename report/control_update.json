@@ -1,0 +1,95 @@
+{
+  "software_revision": "no_iou_conf015_single_frame_no_expiry",
+  "requested_change": "Disable cross-frame and blocked-reacquire hand box IoU gates; unique hand may move to a nonoverlapping position.",
+  "target_recovery_confirmation_frames": 3,
+  "hysteresis_degrees": 3,
+  "tests": {
+    "passed": true,
+    "python_tests": 42,
+    "new_no_iou_tests": 6,
+    "source_sha256": {
+      "board/runtime/application/coin_game.py": "434a6d761d99b39d0d0112a3946a987150f54cf9b799170b7beb4cda22827a24",
+      "board/runtime/application/control.py": "04882cc79836c56403a725ce07e3aab532d6f3942a19235bed8f4b12539619ad",
+      "board/runtime/application/board_pipeline.py": "b811ab42d8f08680632e54df39392d2ecdd9c38266a56c7d8b2a02567341dad3",
+      "board/runtime/application/geometry.py": "3bfc7ea7049ea41e05e4cd5470692391d24924c5ea0667a592caa74935b16c4f"
+    },
+    "test_sha256": {
+      "test_ddr_display.py": "0b910dd6f3a8163b77907f9f9aa8731eaef785ca839a191816d48a82bb282671",
+      "test_detector_threshold.py": "08d16fc8ca81d553a7f7ad87c3ffad1e6da07597c289526b27868099bdbd4e4f",
+      "test_game_cleanup.py": "9afca91813de51b543b13d634bc3c7f2270f70f0a3d0c501aab21be9ea871b22",
+      "test_game_direction.py": "3fce3027b731fbc3cf2454a57e9122e2bd9f5f844a8256adef276328fff0677c",
+      "test_game_renderer.py": "a6725a8fa9d20bfeac9ca967bdffc14617858c6192117fe52dce5f1eea802dfe",
+      "test_game_restart.py": "ddc646ab6289ffabd5677c52da895766d4063caa4fa746e315d3ac9ebe9aab2f",
+      "test_game_state.py": "d67daab0e3d1aa6258d7168b52fd7b658be4c82acd5b03591dc936d8cfc6cac3",
+      "test_no_iou.py": "25b17d47d731949aea2964fedf6c7b2e4761d91835fe41c9334c86badd4dde42",
+      "test_no_timeout.py": "b9440c60986858e48a10ea52f0d5150d6fcd1e80649b12d181c7a19a9d90099d",
+      "test_single_frame.py": "c516c4bc282ddcfcd36077e408d602b44dff9871dd5c5f7b58269f1a184edbe5"
+    },
+    "bit_sha256": "f4e14a1c28d1a321d98919f1b635413550c2a42f3e9a2c9fc45378159a1f1e86",
+    "log_directory": "E:\\Codex\\gesture_no_iou_20261103\\runs",
+    "test_scope": "Six no-IoU policy cases replace four obsolete 0.1-policy tests archived on E; five new cases failed on the old policy; full current suite42 passes."
+  },
+  "board": {
+    "passed": true,
+    "software_revision": "no_iou_conf015_single_frame_no_expiry",
+    "control_policy": {
+      "target_match_minimum_iou": null,
+      "reacquire_minimum_iou": null,
+      "stable_frames": 1,
+      "pointing_probability": 0.5,
+      "detector_confidence": 0.15,
+      "nms_threshold": 0.45,
+      "max_age_seconds": null,
+      "command_timeout_seconds": null,
+      "watchdog_enabled": false
+    },
+    "board_policy_tests": {
+      "tests": 19,
+      "passed": true,
+      "stable_frames": 1,
+      "minimum_iou": null,
+      "detector_confidence": 0.15,
+      "command_timeout_seconds": null,
+      "max_age_seconds": null,
+      "watchdog_running": false
+    },
+    "bitstream_rebuilt": false,
+    "bit_sha256": "f4e14a1c28d1a321d98919f1b635413550c2a42f3e9a2c9fc45378159a1f1e86",
+    "runtime_manifest_sha256": "bbba3e8eb97a2e7b9cd1b0dfceedabbaface00be19a8a02452ef8c1c6f4a8db3",
+    "remote_logs": "/home/xilinx/coin_game_logs/no_iou_20261103_201847",
+    "remote_backup": "/home/xilinx/coin_game_policy_backup_no_iou_20261103_201847",
+    "smoke": {
+      "passed": true,
+      "target_match_minimum_iou": null,
+      "detector_confidence": 0.15,
+      "result": {
+        "event": "result",
+        "round": 1,
+        "score": 0,
+        "game_seconds": 6.0,
+        "elapsed_seconds": 6.2046337140000105,
+        "rendered_frames": 226,
+        "rendering_fps": 24.534145514697187,
+        "inference_frames": 8,
+        "scanout": {
+          "underflow_lines": 123,
+          "read_errors": 0,
+          "video_frames": 592,
+          "presented_frames": 226
+        },
+        "game_underflow_lines": 0,
+        "game_read_errors": 0
+      },
+      "post_exit": {
+        "display_status": 0,
+        "core_control": 4,
+        "read_errors": 0
+      },
+      "controller_updates": 8,
+      "single_frame_tracking_samples": 0,
+      "all_required_one": true,
+      "no_stabilizing": true
+    },
+    "result_sha256": "37afe3b069492cb26f69bc1e3dee34bafffc2f08ccd9d8d5d1706dc196cbc4b7"
+  }
+}

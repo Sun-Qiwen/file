@@ -1,0 +1,241 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 18:12:20 2026
+| Host         : a running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -file E:/Codex/gesture_restart_20261102/runs/impl03/bus_skew.rpt
+| Design       : n_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   22        [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/underflow_gray_reg* && IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/underflow_meta_reg* && IS_SEQUENTIAL == 1}]
+                                                                              Slow              8.000       2.140      5.860
+2   24        [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/frame_gray_reg* && IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/frame_meta_reg* && IS_SEQUENTIAL == 1}]
+                                                                              Slow              8.000       1.906      6.094
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/underflow_gray_reg* && IS_SEQUENTIAL == 1}] -to [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/underflow_meta_reg* && IS_SEQUENTIAL == 1}] 8.000
+Requirement: 8.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_n_clk_wiz_hdmi_0
+                      clk_fpga_0            n_i/ddr_hdmi_0/inst/underflow_meta_reg[9]/D
+                                                                            n_i/ddr_hdmi_0/inst/underflow_meta_reg[27]/D
+                                                                                                            Slow         2.140      5.860
+
+
+Slack (MET) :             5.860ns  (requirement - actual skew)
+  Endpoint Source:        n_i/ddr_hdmi_0/inst/underflow_gray_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_n_clk_wiz_hdmi_0)
+  Endpoint Destination:   n_i/ddr_hdmi_0/inst/underflow_meta_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       n_i/ddr_hdmi_0/inst/underflow_gray_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_n_clk_wiz_hdmi_0)
+  Reference Destination:  n_i/ddr_hdmi_0/inst/underflow_meta_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            8.000ns
+  Endpoint Relative Delay:    2.768ns
+  Reference Relative Delay:   0.464ns
+  Relative CRPR:              0.163ns
+  Actual Bus Skew:            2.140ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_out1_n_clk_wiz_hdmi_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.193     1.193    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.806     3.100    n_i/clk_wiz_hdmi/inst/clk_in1
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                   -3.793    -0.693 r  n_i/clk_wiz_hdmi/inst/mmcm_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.889     1.196    n_i/clk_wiz_hdmi/inst/clk_out1_n_clk_wiz_hdmi_0
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.297 r  n_i/clk_wiz_hdmi/inst/clkout1_buf/O
+                                       net (fo=453, routed)         1.847     3.144    n_i/ddr_hdmi_0/inst/pix_clk
+                  SLICE_X32Y145        FDRE                                         r  n_i/ddr_hdmi_0/inst/underflow_gray_reg[9]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X32Y145        FDRE (Prop_fdre_C_Q)         0.478     3.622 r  n_i/ddr_hdmi_0/inst/underflow_gray_reg[9]/Q
+                                       net (fo=1, routed)           1.933     5.555    n_i/ddr_hdmi_0/inst/underflow_gray[9]
+    Routing       SLICE_X30Y107        FDRE                                         r  n_i/ddr_hdmi_0/inst/underflow_meta_reg[9]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.088     1.088    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.698     2.877    n_i/ddr_hdmi_0/inst/s_axi_aclk
+                  SLICE_X30Y107        FDRE                                         r  n_i/ddr_hdmi_0/inst/underflow_meta_reg[9]/C
+                                       clock pessimism              0.115     2.992    
+                  SLICE_X30Y107        FDRE (Setup_fdre_C_D)       -0.205     2.787    n_i/ddr_hdmi_0/inst/underflow_meta_reg[9]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           5.555    
+                                       clock arrival                          2.787    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         2.768    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_out1_n_clk_wiz_hdmi_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.088     1.088    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.612     2.791    n_i/clk_wiz_hdmi/inst/clk_in1
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                   -3.425    -0.634 r  n_i/clk_wiz_hdmi/inst/mmcm_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.725     1.091    n_i/clk_wiz_hdmi/inst/clk_out1_n_clk_wiz_hdmi_0
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.182 r  n_i/clk_wiz_hdmi/inst/clkout1_buf/O
+                                       net (fo=453, routed)         1.655     2.837    n_i/ddr_hdmi_0/inst/pix_clk
+                  SLICE_X47Y144        FDRE                                         r  n_i/ddr_hdmi_0/inst/underflow_gray_reg[27]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X47Y144        FDRE (Prop_fdre_C_Q)         0.367     3.204 r  n_i/ddr_hdmi_0/inst/underflow_gray_reg[27]/Q
+                                       net (fo=1, routed)           0.500     3.704    n_i/ddr_hdmi_0/inst/underflow_gray[27]
+    Routing       SLICE_X50Y144        FDRE                                         r  n_i/ddr_hdmi_0/inst/underflow_meta_reg[27]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.193     1.193    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.831     3.125    n_i/ddr_hdmi_0/inst/s_axi_aclk
+                  SLICE_X50Y144        FDRE                                         r  n_i/ddr_hdmi_0/inst/underflow_meta_reg[27]/C
+                                       clock pessimism             -0.115     3.010    
+                  SLICE_X50Y144        FDRE (Hold_fdre_C_D)         0.230     3.240    n_i/ddr_hdmi_0/inst/underflow_meta_reg[27]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           3.704    
+                                       clock arrival                          3.240    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         0.464    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/frame_gray_reg* && IS_SEQUENTIAL == 1}] -to [get_cells -hier -filter {NAME =~ */ddr_hdmi_0/inst/frame_meta_reg* && IS_SEQUENTIAL == 1}] 8.000
+Requirement: 8.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_out1_n_clk_wiz_hdmi_0
+                      clk_fpga_0            n_i/ddr_hdmi_0/inst/frame_meta_reg[6]/D
+                                                                            n_i/ddr_hdmi_0/inst/frame_meta_reg[18]/D
+                                                                                                            Slow         1.906      6.094
+
+
+Slack (MET) :             6.094ns  (requirement - actual skew)
+  Endpoint Source:        n_i/ddr_hdmi_0/inst/frame_gray_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_n_clk_wiz_hdmi_0)
+  Endpoint Destination:   n_i/ddr_hdmi_0/inst/frame_meta_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       n_i/ddr_hdmi_0/inst/frame_gray_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_n_clk_wiz_hdmi_0)
+  Reference Destination:  n_i/ddr_hdmi_0/inst/frame_meta_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            8.000ns
+  Endpoint Relative Delay:    2.660ns
+  Reference Relative Delay:   0.491ns
+  Relative CRPR:              0.264ns
+  Actual Bus Skew:            1.906ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_out1_n_clk_wiz_hdmi_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.193     1.193    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.806     3.100    n_i/clk_wiz_hdmi/inst/clk_in1
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                   -3.793    -0.693 r  n_i/clk_wiz_hdmi/inst/mmcm_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.889     1.196    n_i/clk_wiz_hdmi/inst/clk_out1_n_clk_wiz_hdmi_0
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     1.297 r  n_i/clk_wiz_hdmi/inst/clkout1_buf/O
+                                       net (fo=453, routed)         1.846     3.143    n_i/ddr_hdmi_0/inst/pix_clk
+                  SLICE_X38Y142        FDRE                                         r  n_i/ddr_hdmi_0/inst/frame_gray_reg[6]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X38Y142        FDRE (Prop_fdre_C_Q)         0.478     3.621 r  n_i/ddr_hdmi_0/inst/frame_gray_reg[6]/Q
+                                       net (fo=1, routed)           1.691     5.312    n_i/ddr_hdmi_0/inst/frame_gray[6]
+    Routing       SLICE_X49Y120        FDRE                                         r  n_i/ddr_hdmi_0/inst/frame_meta_reg[6]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.088     1.088    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.640     2.819    n_i/ddr_hdmi_0/inst/s_axi_aclk
+                  SLICE_X49Y120        FDRE                                         r  n_i/ddr_hdmi_0/inst/frame_meta_reg[6]/C
+                                       clock pessimism              0.115     2.934    
+                  SLICE_X49Y120        FDRE (Setup_fdre_C_D)       -0.282     2.652    n_i/ddr_hdmi_0/inst/frame_meta_reg[6]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           5.312    
+                                       clock arrival                          2.652    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         2.660    
+
+Reference path:
+    Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  ---------------------------------------------------------------------------------    -------------------
+                                       (clock clk_out1_n_clk_wiz_hdmi_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.088     1.088    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.612     2.791    n_i/clk_wiz_hdmi/inst/clk_in1
+                  MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                                   -3.425    -0.634 r  n_i/clk_wiz_hdmi/inst/mmcm_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.725     1.091    n_i/clk_wiz_hdmi/inst/clk_out1_n_clk_wiz_hdmi_0
+                  BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     1.182 r  n_i/clk_wiz_hdmi/inst/clkout1_buf/O
+                                       net (fo=453, routed)         1.654     2.836    n_i/ddr_hdmi_0/inst/pix_clk
+                  SLICE_X43Y139        FDRE                                         r  n_i/ddr_hdmi_0/inst/frame_gray_reg[18]/C
+  ---------------------------------------------------------------------------------    -------------------
+    Routing       SLICE_X43Y139        FDRE (Prop_fdre_C_Q)         0.337     3.173 r  n_i/ddr_hdmi_0/inst/frame_gray_reg[18]/Q
+                                       net (fo=1, routed)           0.364     3.538    n_i/ddr_hdmi_0/inst/frame_gray[18]
+    Routing       SLICE_X43Y137        FDRE                                         r  n_i/ddr_hdmi_0/inst/frame_meta_reg[18]/D
+  ---------------------------------------------------------------------------------    -------------------
+
+                                       (clock clk_fpga_0 rise edge)
+                                                                    0.000     0.000 r  
+                  PS7_X0Y0             PS7                          0.000     0.000 r  n_i/ps7/inst/PS7_i/FCLKCLK[0]
+                                       net (fo=1, routed)           1.193     1.193    n_i/ps7/inst/FCLK_CLK_unbuffered[0]
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  n_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                                       net (fo=49349, routed)       1.839     3.133    n_i/ddr_hdmi_0/inst/s_axi_aclk
+                  SLICE_X43Y137        FDRE                                         r  n_i/ddr_hdmi_0/inst/frame_meta_reg[18]/C
+                                       clock pessimism             -0.115     3.018    
+                  SLICE_X43Y137        FDRE (Hold_fdre_C_D)         0.029     3.047    n_i/ddr_hdmi_0/inst/frame_meta_reg[18]
+  ---------------------------------------------------------------------------------
+                                       data arrival                           3.538    
+                                       clock arrival                          3.047    
+  ---------------------------------------------------------------------------------
+                                       relative delay                         0.491    
+
+
+

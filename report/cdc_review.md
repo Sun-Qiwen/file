@@ -1,0 +1,7 @@
+# CDC审查
+
+原DDR握手机制保持不变：52条CDC-1为completed_tag[0]到ready_tag两组CE的保持数据路径；1条CDC-14为held_request行索引进入综合合并的DSP AREG。源数据保持至同步请求/ACK后捕获，实际26个源FF至36个接收端均有8ns上限。灰码计数先在源域寄存，再经两级同步，bus_skew单独检查。原始报告53条Critical完整保留，不能等同DRC严重错误，也不宣称CDC零Critical。
+
+BTN0经带ASYNC_REG的两级FF同步。D19异步输入只到button_meta/D这一个端点并施加精确false-path；button_meta到button_sync仍按100MHz检查。按钮后续稳定计数和事件寄存器都在同一AXI域。button_exceptions和button_exception_coverage为实际网表覆盖证据。没有整组时钟false-path，没有给异步机械输入编造数值延迟。
+
+所有实际物理变化仍须重新核对当前报告。运行中仅复位显示模块不能证明AXI端到端空闲；既有故障所有权与DMA缓冲释放规则不变。

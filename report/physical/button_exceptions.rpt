@@ -1,0 +1,43 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 18:03:44 2026
+| Host         : a running 64-bit major release  (build 9200)
+| Command      : report_exceptions -file E:/Codex/gesture_restart_20261102/runs/impl03/button_exceptions.rpt
+| Design       : n_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Exceptions Report
+
+Position  From                                                                              Through                                                         To                                                                                Setup           Hold            Status           
+--------  --------------------------------------------------------------------------------  --------------------------------------------------------------  --------------------------------------------------------------------------------  --------------  --------------  -----------------
+4         *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+5         *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+6         *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+7         *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+8         *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+9         *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+10        *                                                                                 [get_ports -scoped_to_current_instance -no_traverse src_arst]   *                                                                                 false           false           
+16        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/completed_tag_reg* &&  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/ready_tag0_reg* && IS  max_dpo=8       -               
+           IS_SEQUENTIAL == 1}]                                                                                                                             _SEQUENTIAL == 1}]                                                                                                
+17        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/completed_tag_reg* &&  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/ready_tag1_reg* && IS  max_dpo=8       -               
+           IS_SEQUENTIAL == 1}]                                                                                                                             _SEQUENTIAL == 1}]                                                                                                
+18        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/request_toggle_reg &&  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/request_meta_reg && I  max_dpo=8       -               
+           IS_SEQUENTIAL == 1}]                                                                                                                             S_SEQUENTIAL == 1}]                                                                                               
+19        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/ack_toggle_reg && IS_  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/ack_meta_reg && IS_SE  max_dpo=8       -               
+          SEQUENTIAL == 1}]                                                                                                                                 QUENTIAL == 1}]                                                                                                   
+20        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/enabled_reg && IS_SEQ  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/run_meta_reg && IS_SE  max_dpo=8       -               
+          UENTIAL == 1}]                                                                                                                                    QUENTIAL == 1}]                                                                                                   
+21        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/underflow_gray_reg* &  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/underflow_meta_reg* &  max_dpo=8       -               
+          & IS_SEQUENTIAL == 1}]                                                                                                                            & IS_SEQUENTIAL == 1}]                                                                                            
+23        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/frame_gray_reg* && IS  *                                                               [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/frame_meta_reg* && IS  max_dpo=8       -               
+          _SEQUENTIAL == 1}]                                                                                                                                _SEQUENTIAL == 1}]                                                                                                
+25        [get_cells -hier -quiet -filter {NAME =~ */ddr_hdmi_0/inst/held_request_reg* &&   *                                                               [all_fanout -flat -endpoints_only -from [get_pins -of_objects [get_cells -hier -  max_dpo=8       -               
+          IS_SEQUENTIAL == 1}]                                                                                                                              quiet -filter {NAME =~ */ddr_hdmi_0/inst/held_request_reg* && IS_SEQUENTIAL == 1                                  
+                                                                                                                                                            }] -filter {DIRECTION == OUT}]]                                                                                   
+26        [get_ports -quiet restart_btn]                                                    *                                                               [get_pins -of_objects [get_cells -hier -quiet -filter {NAME =~ */button_meta_reg  false           false           
+                                                                                                                                                            }] -filter {REF_PIN_NAME == D}]                                                                                   
+

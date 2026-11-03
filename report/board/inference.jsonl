@@ -1,0 +1,9 @@
+{"frame": 1, "dropped": 0, "pipeline_ms": 971.3221590000103, "capture_age_ms": 987.9410269995788, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 8, "dropped": 6, "pipeline_ms": 973.1204479994631, "capture_age_ms": 1068.7154689994713, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 16, "dropped": 7, "pipeline_ms": 960.305696999967, "capture_age_ms": 979.6235499998147, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 23, "dropped": 6, "pipeline_ms": 944.1993770005865, "capture_age_ms": 988.499968000724, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 30, "dropped": 6, "pipeline_ms": 948.7381959997947, "capture_age_ms": 1041.5781829997286, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 37, "dropped": 6, "pipeline_ms": 955.1103120002153, "capture_age_ms": 1089.6900600000663, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 45, "dropped": 7, "pipeline_ms": 988.1509580000056, "capture_age_ms": 1030.9712600001149, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 52, "dropped": 6, "pipeline_ms": 956.7127620002793, "capture_age_ms": 1061.5486820006481, "direction": 12, "reason": "no_hand", "status": "no_hand"}
+{"frame": 60, "dropped": 7, "pipeline_ms": 947.5416420000329, "capture_age_ms": 1024.6316230004595, "direction": 12, "reason": "time_up", "status": "no_hand"}

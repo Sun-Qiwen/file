@@ -1,0 +1,147 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 18:10:50 2026
+| Host         : a running 64-bit major release  (build 9200)
+| Command      : report_incremental_reuse -file E:/Codex/gesture_restart_20261102/runs/impl03/incremental_reuse.rpt
+| Design       : n_wrapper
+| Device       : xc7z020
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Incremental Implementation Information
+
+Table of Contents
+-----------------
+1. Incremental Flow Summary
+2. Reuse Summary
+3. Reference Checkpoint Information
+4. Comparison with Reference Run
+5. Optimization Comparison With Reference Run
+5.1 iphys_opt_replay Optimizations
+5.2 QoR Suggestion Optimizations
+6. Command Comparison with Reference Run
+6.1 Reference:
+6.2 Incremental:
+7. Non Reuse Information
+
+1. Incremental Flow Summary
+---------------------------
+
++-----------------------+------------------+
+|    Flow Information   |       Value      |
++-----------------------+------------------+
+| Synthesis Flow        |          Default |
+| Auto Incremental      |               No |
+| Incremental Directive | RuntimeOptimized |
+| Target WNS            |              0.0 |
+| QoR Suggestions       |                0 |
++-----------------------+------------------+
+
+
+2. Reuse Summary
+----------------
+
++-------+------------------------------+------------------------------------+----------------------------+--------------------+--------+
+|  Type | Matched % (of Initial Total) | Initial Reuse % (of Initial Total) | Current Reuse % (of Total) | Fixed % (of Total) |  Total |
++-------+------------------------------+------------------------------------+----------------------------+--------------------+--------+
+| Cells |                        99.86 |                              99.88 |                      99.81 |               0.13 | 106833 |
+| Nets  |                        99.89 |                              99.65 |                      99.23 |               0.00 |  88678 |
+| Pins  |                            - |                              99.75 |                      97.36 |                  - | 400669 |
+| Ports |                        99.28 |                             100.00 |                     100.00 |             100.00 |    139 |
++-------+------------------------------+------------------------------------+----------------------------+--------------------+--------+
+
+
+3. Reference Checkpoint Information
+-----------------------------------
+
++----------------+-------------------------------------------------------+
+| DCP Location:  | E:/Codex/gesture_coin_20261102/runs/impl05/routed.dcp |
++----------------+-------------------------------------------------------+
+
+
++--------------------------------+----------------------------+
+|         DCP Information        |            Value           |
++--------------------------------+----------------------------+
+| Vivado Version                 |                     2025.2 |
+| DCP State                      |                 POST_ROUTE |
+| Recorded WNS                   |                      0.152 |
+| Recorded WHS                   |                      0.035 |
+| Reference Speed File Version   | PRODUCTION 1.12 2019-11-22 |
+| Incremental Speed File Version | PRODUCTION 1.12 2019-11-22 |
++--------------------------------+----------------------------+
+* Recorded WNS/WHS timing numbers are estimated timing numbers. They may vary slightly from sign-off timing numbers.
+
+
+4. Comparison with Reference Run
+--------------------------------
+
++-----------------+---------------------------+---------------------------+---------------------------+
+|                 |          WNS(ns)          |  Runtime(elapsed)(hh:mm)  |    Runtime(cpu)(hh:mm)    |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| synth_design    |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| read_checkpoint |             |             |       00:03 |       00:02 |       00:03 |       00:02 |
+| place_design    |       0.109 |       0.109 |       00:08 |       00:02 |       00:10 |       00:03 |
+| phys_opt_design |       0.109 |       0.109 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| route_design    |       0.152 |       0.247 |       00:03 |       00:01 |       00:04 |       00:02 |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+5. Optimization Comparison With Reference Run
+---------------------------------------------
+
+5.1 iphys_opt_replay Optimizations
+----------------------------------
+
++-------------------------+--------+------------+
+| iphys_opt_design replay | Reused | Not Reused |
++-------------------------+--------+------------+
+
+
+5.2 QoR Suggestion Optimizations
+--------------------------------
+
++-----------------+-------+
+| QoR Suggestions | Value |
++-----------------+-------+
+
+
+6. Command Comparison with Reference Run
+----------------------------------------
+
+6.1 Reference:
+--------------
+synth_design-define default::[not_specified] -verilog_define default::[not_specified] -vhdl_define default::[not_specified] -top  n_wrapper -part  xc7z020clg400-1 
+opt_design
+read_checkpoint -directive RuntimeOptimized  -incremental E:/Codex/gesture_coin_20261102/baseline_delivery/build/checkpoints/h72_quarter/routed.dcp
+place_design -directive Default
+phys_opt_design -placement_opt
+route_design -directive Default
+
+6.2 Incremental:
+----------------
+synth_design-define default::[not_specified] -verilog_define default::[not_specified] -vhdl_define default::[not_specified] -top  n_wrapper -part  xc7z020clg400-1 
+opt_design
+read_checkpoint -directive RuntimeOptimized  -incremental E:/Codex/gesture_coin_20261102/runs/impl05/routed.dcp
+place_design -directive Default
+phys_opt_design -placement_opt
+route_design -directive Default
+
+7. Non Reuse Information
+------------------------
+
++-------------------------------+------+
+|              Type             |   %  |
++-------------------------------+------+
+| Non-Reused Cells              | 0.18 |
+|   New                         | 0.11 |
+|   Discarded to improve timing | 0.06 |
+| Partially reused nets         | 0.00 |
+| Non-Reused nets               | 0.76 |
+| Non-Reused Ports              | 0.00 |
++-------------------------------+------+
+
+

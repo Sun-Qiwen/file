@@ -1,0 +1,110 @@
+{
+  "restored_existing_materials_only": true,
+  "hls_cpp_header_files": 12,
+  "hls_cpp_header_hashes": {
+    "src/hls/inference_core/add_packed.h": "ccce7059ef92a7c4971ff28de06912019b70d1314123e68f1a88ef3b66da1534",
+    "src/hls/inference_core/arena_io.h": "83b95ce4c1027547f17ee79d1cb46987e591bef457a0ede923976a32837ffa58",
+    "src/hls/inference_core/cnn_ops.h": "c15a39cc483adf22710da4aab5ddc809929fe8b5ee94496a84ccd582a4a0c450",
+    "src/hls/inference_core/concat_identity.h": "7f252cb6af9451de93d304f014d7fbeffa594bf3bb324002ced2132a5494a6a2",
+    "src/hls/inference_core/concat_requant.h": "2dc4bb9c930ee7b21e37325e43ab485e23f2ae194661117504a96102b03a9d07",
+    "src/hls/inference_core/conv_engine.h": "91b27c8070e014792b327a5530fc4a2fb6439642a5c5fc6c7ae8778e53207885",
+    "src/hls/inference_core/conv_store.h": "764be8a79065019aba0a4f44dbab177c43f2cffc533ad4dfe7aa58ec26bbe380",
+    "src/hls/inference_core/focus_packed.h": "6b3a98110b0c5f533d1d4de3948bf44252baf399268c5a65c486dbda5e6ead8d",
+    "src/hls/inference_core/maxpool_packed.h": "28edecdd63295ac78d9bb6df87b6c332e23992d415472900a15212fcec822efc",
+    "src/hls/inference_core/network.cpp": "d89501d825dd6f7fd014aeef411a701a8e18546977163176433f355b17ffdd4c",
+    "src/hls/inference_core/program.h": "c1bcd86562fc5d375a5bd4dea2642d66478a51c98079d46c52290d752e93ccda",
+    "src/hls/inference_core/resize_packed.h": "34a4273c84fcc8e14f8f026e2c48f4f822148529450db63b50cea3c5c659f019"
+  },
+  "cpp_headers_match_E_original_and_HLS_seal": true,
+  "restored_files": {
+    "build/reports/hls/yolox_int8_csynth.rpt": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\reports\\fc70\\hls\\yolox_int8_csynth.rpt",
+      "sha256": "3dd3433d439d839e08adefa16b5247ddeffdccfc2c778ec00ecbfbdb7b310ef4"
+    },
+    "build/reports/hls/yolox_int8_csynth.xml": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\reports\\fc70\\hls\\yolox_int8_csynth.xml",
+      "sha256": "f94f978b864ca87195f55479255763805d7711f7e0309c4ba522cf4d24d23712"
+    },
+    "build/provenance/hls_original_flow/assess_physical.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\assess_physical.py",
+      "sha256": "cb5f9d3cc61619bcabfc4b6007b79273f24d98f268559dd93a774f5069d58078"
+    },
+    "build/provenance/hls_original_flow/build.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\build.py",
+      "sha256": "b9b73d2ae480455431f131e7434e2f9d3b8749194b5c482e21e5662fa60b7175"
+    },
+    "build/provenance/hls_original_flow/common.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\common.py",
+      "sha256": "02d77c0e1730dfb33c6d22f2b94b4fefa0590bbaa37cf485305cacb2f771a178"
+    },
+    "build/provenance/hls_original_flow/contracts.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\contracts.py",
+      "sha256": "350a1ff48250b4b13484793f6c0f93be9878180291b09f650db14746b6dfb3c2"
+    },
+    "build/provenance/hls_original_flow/export.tcl": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\export.tcl",
+      "sha256": "0ce6e7c66847f00b75d9ae4155e2b061d127fa2f86671ce4f666a8f49cf44c7a"
+    },
+    "build/provenance/hls_original_flow/ff_clock_contract.tcl": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\ff_clock_contract.tcl",
+      "sha256": "73dfc7ee6bdc453a47ef61382d3f70e609a04d5242ff1a99ca30637c27b7ebb6"
+    },
+    "build/provenance/hls_original_flow/instrument_profile.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\instrument_profile.py",
+      "sha256": "93695af719b343d2c6616aa00690f419e54bb057524991d4ee6db941774f9b7d"
+    },
+    "build/provenance/hls_original_flow/perf_monitor.v": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\perf_monitor.v",
+      "sha256": "6a7d434d8cf858badf45b79de559222f6f9e7b5ba84883778710dbf6e566031f"
+    },
+    "build/provenance/hls_original_flow/physical.tcl": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\physical.tcl",
+      "sha256": "d21c86eb7d201e850051ea3648e01c7dca7013954e7150efcab7c901ea6e14c6"
+    },
+    "build/provenance/hls_original_flow/physical_contract.tcl": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\physical_contract.tcl",
+      "sha256": "d2acebab189ca64e666c8466e78caca7cd60c7587995a42a0d7c61f685b8d5a6"
+    },
+    "build/provenance/hls_original_flow/physical_resume.tcl": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\physical_resume.tcl",
+      "sha256": "e4a96d6d8ba7414118489e2fd8abcbea4706b9d8b4cf59c084e3affcd03804fa"
+    },
+    "build/provenance/hls_original_flow/rtl_mac_contract.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\rtl_mac_contract.py",
+      "sha256": "f8ae4f6c26b555536c7513a96a4c5559753e909770eb8953e182b2e7605d1b17"
+    },
+    "build/provenance/hls_original_flow/selfcheck.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\selfcheck.py",
+      "sha256": "c4105fc08f330241574798f8d41da850d7333ba12a406443202e0a4dc0dd333d"
+    },
+    "build/provenance/hls_original_flow/synth.tcl": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\synth.tcl",
+      "sha256": "69b662f3a4e3b5661539f750988740935556e574b19457fe14d7a90cabe62350"
+    },
+    "build/provenance/hls_original_flow/synthesis_gate.py": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\scripts\\fc70\\synthesis_gate.py",
+      "sha256": "946515a21c7e76a4194f473dcf2a2672085be85e74c6c99669cd238f4c60e886"
+    },
+    "build/provenance/hls_source_identity.json": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\report\\evidence\\fc70\\final_source_identity.json",
+      "sha256": "ee334c0cc3a8d797215d1d117583b81f8af5d0e700bd5e415bb36b0ee6942be9"
+    },
+    "build/provenance/hls_original_review.json": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\report\\evidence\\fc70\\final_review\\native_hls_review.json",
+      "sha256": "048f923e0076be7c16f469e42f045fe9d5c06f043ab7d763f1e221551c90ba73"
+    },
+    "build/provenance/hls_original.cfg": {
+      "source": "E:\\Codex\\gesture_coin_20261102\\baseline_delivery\\build\\config\\fc70\\hls.cfg",
+      "sha256": "8856b6d85048873d9249d9acfa1a0daf26417417b6cffc2bfdbd99d377c019a2"
+    }
+  },
+  "original_flow_is_historical_source_archive": true,
+  "original_config_path_preserved": false,
+  "original_tool_invocations_run": false,
+  "new_hls_ip_generated": false,
+  "runtime_bit_hwh_changed": false,
+  "automatic_pathfinding": false,
+  "original_config_bytes_preserved": true,
+  "current_configuration_adapted": true,
+  "record_scope": "Original restoration. Original config relocated to provenance; current path/entry adaptation is described in report/hls_entry.json."
+}

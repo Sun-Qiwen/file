@@ -1,0 +1,172 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 18:11:38 2026
+| Host         : a running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file E:/Codex/gesture_restart_20261102/runs/impl03/cdc.rpt
+| Design       : n_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID      Severity  Count  Description
+------  --------  -----  ----------------------------------------------
+CDC-1   Critical     52  1-bit unknown CDC circuitry
+CDC-3   Info          3  1-bit synchronized with ASYNC_REG property
+CDC-6   Warning       2  Multi-bit synchronized with ASYNC_REG property
+CDC-14  Critical      1  Multi-bit CDC path on a non-FD primitive
+CDC-15  Warning      78  Clock enable controlled CDC structure detected
+
+Source Clock: clk_out1_n_clk_wiz_hdmi_0
+Destination Clock: clk_fpga_0
+CDC Type: Safely Timed
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)                                   Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  ----------------------------------------------  ----------------------------------------------
+  1  CDC-6   Warning   Multi-bit synchronized with ASYNC_REG property      2  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/frame_gray_reg[31:0]/C      n_i/ddr_hdmi_0/inst/frame_meta_reg[31:0]/D
+  2  CDC-14  Critical  Multi-bit CDC path on a non-FD primitive            0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[9:0]/C     n_i/ddr_hdmi_0/inst/read_address0/A[9:0]
+  3  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/request_toggle_reg/C        n_i/ddr_hdmi_0/inst/request_meta_reg/D
+  4  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[0]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[0]/D
+  5  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[1]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[1]/D
+  6  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[2]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[2]/D
+  7  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[3]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[3]/D
+  8  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[4]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[4]/D
+  9  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[5]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[5]/D
+ 10  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[6]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[6]/D
+ 11  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[7]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[7]/D
+ 12  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[8]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[8]/D
+ 13  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[9]/C       n_i/ddr_hdmi_0/inst/request_tag_reg[9]/D
+ 14  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[10]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[10]/D
+ 15  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[11]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[11]/D
+ 16  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[12]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[12]/D
+ 17  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[13]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[13]/D
+ 18  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[14]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[14]/D
+ 19  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[15]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[15]/D
+ 20  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[16]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[16]/D
+ 21  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[17]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[17]/D
+ 22  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[18]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[18]/D
+ 23  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[19]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[19]/D
+ 24  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[20]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[20]/D
+ 25  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[21]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[21]/D
+ 26  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[22]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[22]/D
+ 27  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[23]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[23]/D
+ 28  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[24]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[24]/D
+ 29  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/held_request_reg[25]/C      n_i/ddr_hdmi_0/inst/request_tag_reg[25]/D
+ 30  CDC-6   Warning   Multi-bit synchronized with ASYNC_REG property      2  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/underflow_gray_reg[31:0]/C  n_i/ddr_hdmi_0/inst/underflow_meta_reg[31:0]/D
+
+Source Clock: clk_fpga_0
+Destination Clock: clk_out1_n_clk_wiz_hdmi_0
+CDC Type: Safely Timed
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)                                Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  -------------------------------------------  -----------------------------------------
+  1  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/ack_toggle_reg/C         n_i/ddr_hdmi_0/inst/ack_meta_reg/D
+  2  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[0]/CE
+  3  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[0]/D
+  4  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[1]/CE
+  5  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[1]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[1]/D
+  6  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[2]/CE
+  7  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[2]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[2]/D
+  8  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[3]/CE
+  9  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[3]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[3]/D
+ 10  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[4]/CE
+ 11  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[4]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[4]/D
+ 12  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[5]/CE
+ 13  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[5]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[5]/D
+ 14  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[6]/CE
+ 15  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[6]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[6]/D
+ 16  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[7]/CE
+ 17  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[7]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[7]/D
+ 18  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[8]/CE
+ 19  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[8]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[8]/D
+ 20  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[9]/CE
+ 21  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[9]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[9]/D
+ 22  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[10]/CE
+ 23  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[10]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[10]/D
+ 24  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[11]/CE
+ 25  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[11]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[11]/D
+ 26  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[12]/CE
+ 27  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[12]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[12]/D
+ 28  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[13]/CE
+ 29  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[13]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[13]/D
+ 30  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[14]/CE
+ 31  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[14]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[14]/D
+ 32  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[15]/CE
+ 33  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[15]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[15]/D
+ 34  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[16]/CE
+ 35  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[16]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[16]/D
+ 36  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[17]/CE
+ 37  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[17]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[17]/D
+ 38  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[18]/CE
+ 39  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[18]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[18]/D
+ 40  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[19]/CE
+ 41  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[19]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[19]/D
+ 42  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[20]/CE
+ 43  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[20]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[20]/D
+ 44  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[21]/CE
+ 45  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[21]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[21]/D
+ 46  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[22]/CE
+ 47  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[22]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[22]/D
+ 48  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[23]/CE
+ 49  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[23]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[23]/D
+ 50  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[24]/CE
+ 51  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[24]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[24]/D
+ 52  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag0_reg[25]/CE
+ 53  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[25]/C  n_i/ddr_hdmi_0/inst/ready_tag0_reg[25]/D
+ 54  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[0]/CE
+ 55  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[0]/D
+ 56  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[1]/CE
+ 57  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[1]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[1]/D
+ 58  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[2]/CE
+ 59  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[2]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[2]/D
+ 60  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[3]/CE
+ 61  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[3]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[3]/D
+ 62  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[4]/CE
+ 63  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[4]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[4]/D
+ 64  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[5]/CE
+ 65  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[5]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[5]/D
+ 66  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[6]/CE
+ 67  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[6]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[6]/D
+ 68  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[7]/CE
+ 69  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[7]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[7]/D
+ 70  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[8]/CE
+ 71  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[8]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[8]/D
+ 72  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[9]/CE
+ 73  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[9]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[9]/D
+ 74  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[10]/CE
+ 75  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[10]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[10]/D
+ 76  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[11]/CE
+ 77  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[11]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[11]/D
+ 78  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[12]/CE
+ 79  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[12]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[12]/D
+ 80  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[13]/CE
+ 81  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[13]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[13]/D
+ 82  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[14]/CE
+ 83  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[14]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[14]/D
+ 84  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[15]/CE
+ 85  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[15]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[15]/D
+ 86  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[16]/CE
+ 87  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[16]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[16]/D
+ 88  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[17]/CE
+ 89  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[17]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[17]/D
+ 90  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[18]/CE
+ 91  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[18]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[18]/D
+ 92  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[19]/CE
+ 93  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[19]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[19]/D
+ 94  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[20]/CE
+ 95  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[20]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[20]/D
+ 96  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[21]/CE
+ 97  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[21]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[21]/D
+ 98  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[22]/CE
+ 99  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[22]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[22]/D
+100  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[23]/CE
+101  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[23]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[23]/D
+102  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[24]/CE
+103  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[24]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[24]/D
+104  CDC-1   Critical  1-bit unknown CDC circuitry                         0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[0]/C   n_i/ddr_hdmi_0/inst/ready_tag1_reg[25]/CE
+105  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/completed_tag_reg[25]/C  n_i/ddr_hdmi_0/inst/ready_tag1_reg[25]/D
+106  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  Max Delay Datapath Only  n_i/ddr_hdmi_0/inst/enabled_reg/C            n_i/ddr_hdmi_0/inst/run_meta_reg/D
+

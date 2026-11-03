@@ -1,0 +1,50 @@
+{
+  "record_date": "2026-11-03",
+  "hardware_revision": "ddr_coin_game_btn0",
+  "software_revision": "no_iou_conf015_single_frame_no_expiry",
+  "build_status": "completed",
+  "board_test_status": "completed",
+  "board_test_repeated": true,
+  "status_basis": {
+    "source": "project_author_confirmation_in_chat",
+    "confirmation_date": "2026-11-03",
+    "statement": "项目作者确认：此前已完成构建，并已多次上板测试。",
+    "original_complete_run_logs": "not_located_by_author",
+    "scope": "确认既往项目构建及上板测试完成；不作为本次重新运行当前适配脚本的执行记录。"
+  },
+  "retained_evidence": {
+    "hls_report": "build/reports/hls/yolox_int8_csynth.rpt",
+    "synthesis_record": "build/provenance/accepted_synthesis.json",
+    "implementation_record": "build/provenance/accepted_implementation.json",
+    "artifact_binding": "build/provenance/artifact_binding.json",
+    "board_acceptance": "report/board/acceptance.json",
+    "board_game_result": "report/board/result.json",
+    "artifact_sha256": {
+      "build/checkpoints/coin_game/synthesis.dcp": "055f2f1df66db464f8a67121131dbe26e8c88c5c32d656ff4f8c34f628d67226",
+      "build/checkpoints/coin_game/routed.dcp": "77bab303a8469053ec218bc9c786c3eb7a5181ea5a8468e54079d129a6b6827d",
+      "build/checkpoints/coin_game/gesture_coin_game.hwh": "419b626d2a005f1e3f33ddc2c73e176513dccda171de90c440404131875d7ccf",
+      "board/runtime/application/overlay/gesture_coin_game.bit": "f4e14a1c28d1a321d98919f1b635413550c2a42f3e9a2c9fc45378159a1f1e86",
+      "board/runtime/application/overlay/gesture_coin_game.hwh": "419b626d2a005f1e3f33ddc2c73e176513dccda171de90c440404131875d7ccf",
+      "build/reports/implementation/bus_skew.rpt": "b526f140c0acbf1779efad99cd66dedac0fa05b2e65a544930de1a96f12b1ad2",
+      "build/reports/implementation/button_exception_coverage.rpt": "25f9a4597f7f06578f19487fcf8e80d24195455fe65ef015d2a4300033d40354",
+      "build/reports/implementation/button_exceptions.rpt": "f8ad258285f3b2ae4f654fe61c89f0747066a12ed02b03c4cb9deefa8a341b82",
+      "build/reports/implementation/cdc.rpt": "caad48f74590da92815562210ca24b0877ee58d6cefb50034c20eba60b6a9170",
+      "build/reports/implementation/check_timing.rpt": "f4981e16e30c874e0a1180271ebec51540aacd78989914883e5ca9c5aafabd3f",
+      "build/reports/implementation/drc.rpt": "0865bc35c06076e742dd95a3557ccad9de0aad7d2d380c8459a31b46ed9fb43c",
+      "build/reports/implementation/incremental_reuse.rpt": "16541c9f9b8237d052fae0ebb3b5b1194751607e1dd69014f9b854b6d6527144",
+      "build/reports/implementation/route_status.rpt": "c90921cf2d072ef07517b592a61280be20166d5e1853bdb74e58f04cb56c2539",
+      "build/reports/implementation/timing.rpt": "feb5e382d799a6288e635a14f63cc17f6d349f220d6360c940a0cf01468db6b4",
+      "build/reports/implementation/utilization.rpt": "b8aefc692df8620ae8a153788e2c09a8dcf8aa01e17a3de5e89c322b1841621f",
+      "build/reports/synthesis/synthesis_control_sets.rpt": "750c252fb44b62796a64bbb88c116b719e74c0bca9e27f77e4de846723ac37d7",
+      "build/reports/synthesis/synthesis_utilization.rpt": "91d32abf13968b41a344fc0abc062734139323620149a9c472129a99c01fdca5"
+    }
+  },
+  "documentation_update": {
+    "vendor_tools_invoked": false,
+    "board_accessed": false,
+    "runtime_source_changed": false,
+    "hardware_artifacts_changed": false,
+    "original_reports_and_measurements_changed": false,
+    "historical_execution_flags": "Preserved with operation-specific scopes; these flags do not negate the author-confirmed project completion."
+  }
+}

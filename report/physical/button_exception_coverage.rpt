@@ -1,0 +1,40 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 18:03:45 2026
+| Host         : a running 64-bit major release  (build 9200)
+| Command      : report_exceptions -coverage -file E:/Codex/gesture_restart_20261102/runs/impl03/button_exception_coverage.rpt
+| Design       : n_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Exceptions Report
+
+Position  Type                     Setup      Hold   From      Through  To        Endpoints  From (%)  Through (%)  To (%)
+--------  -----------------------  ---------  -----  --------  -------  --------  ---------  --------  -----------  ------
+3         False Path               false      false  1 ports            1 pins    1          100.00                 100.00
+4         False Path               false      false            1 pins             2                    100.00        
+5         False Path               false      false            1 pins             2                    100.00        
+6         False Path               false      false            1 pins             2                    100.00        
+7         False Path               false      false            1 pins             2                    100.00        
+8         False Path               false      false            1 pins             2                    100.00        
+9         False Path               false      false            1 pins             2                    100.00        
+10        False Path               false      false            1 pins             2                    100.00        
+11        False Path               false      false                     1 cells   0                                 0.00
+12        False Path               false      false                     1 cells   1                                 0.00
+13        False Path               false      false                     1 cells   0                                 0.00
+14        False Path               false      false                     1 cells   1                                 0.00
+15        Max Delay Datapath Only  max_dpo=8  -      26 cells           26 cells  26         100.00                 33.33
+16        Max Delay Datapath Only  max_dpo=8  -      26 cells           26 cells  52         100.00                 66.67
+17        Max Delay Datapath Only  max_dpo=8  -      26 cells           26 cells  52         100.00                 66.67
+18        Max Delay Datapath Only  max_dpo=8  -      1 cells            1 cells   1          100.00                 33.33
+19        Max Delay Datapath Only  max_dpo=8  -      1 cells            1 cells   1          100.00                 33.33
+20        Max Delay Datapath Only  max_dpo=8  -      1 cells            1 cells   1          100.00                 33.33
+21        Max Delay Datapath Only  max_dpo=8  -      32 cells           32 cells  32         100.00                 33.33
+23        Max Delay Datapath Only  max_dpo=8  -      32 cells           32 cells  32         100.00                 33.33
+25        Max Delay Datapath Only  max_dpo=8  -      26 cells           36 pins   36         100.00                 100.00
+26        False Path               false      false  1 ports            1 pins    1          100.00                 100.00
+
+Warning: the percentages reported indicate the number of pins covered by the exception relative to the number of pins specified implicitly or explicitly.

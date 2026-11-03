@@ -1,0 +1,128 @@
+{
+  "build_completed": true,
+  "board_tests_completed": true,
+  "completion_basis": "project_author_confirmation_and_retained_evidence",
+  "completion_record": "report/build_status.json",
+  "execution_flags_scope": "Archived offline verification of the cleanup operation; execution flags are not the overall project completion status.",
+  "passed": true,
+  "python_tests": 45,
+  "rtl_scenarios": 7,
+  "results": [
+    {
+      "name": "python",
+      "exit_code": 0,
+      "seconds": 0.4797248999993826
+    },
+    {
+      "name": "button_compile",
+      "exit_code": 0,
+      "seconds": 0.11816760000056092
+    },
+    {
+      "name": "button",
+      "exit_code": 0,
+      "seconds": 0.05389070000001084
+    },
+    {
+      "name": "fullwidth_compile",
+      "exit_code": 0,
+      "seconds": 0.08338860000003478
+    },
+    {
+      "name": "fullwidth",
+      "exit_code": 0,
+      "seconds": 1.6876865999993242
+    },
+    {
+      "name": "early_last_compile",
+      "exit_code": 0,
+      "seconds": 0.08512229999996634
+    },
+    {
+      "name": "early_last",
+      "exit_code": 0,
+      "seconds": 0.046607700000095065
+    },
+    {
+      "name": "missing_last_compile",
+      "exit_code": 0,
+      "seconds": 0.08622329999980138
+    },
+    {
+      "name": "missing_last",
+      "exit_code": 0,
+      "seconds": 0.05301240000062535
+    },
+    {
+      "name": "wrong_id_compile",
+      "exit_code": 0,
+      "seconds": 0.08951410000008764
+    },
+    {
+      "name": "wrong_id",
+      "exit_code": 0,
+      "seconds": 0.04928139999992709
+    },
+    {
+      "name": "slave_error_compile",
+      "exit_code": 0,
+      "seconds": 0.08289270000022952
+    },
+    {
+      "name": "slave_error",
+      "exit_code": 0,
+      "seconds": 0.04632579999997688
+    },
+    {
+      "name": "late_last_compile",
+      "exit_code": 0,
+      "seconds": 0.08171429999947577
+    },
+    {
+      "name": "late_last",
+      "exit_code": 0,
+      "seconds": 0.04635779999989609
+    }
+  ],
+  "source_sha256": {
+    "sim/tests/test_ddr_display.py": "5b1b9af70476794cc3ce068e645e81f2998a336c97c6ee2019bd8a73155e077c",
+    "sim/tests/test_detector_threshold.py": "0e454b10577fffabd4f689a87b5e450e9826b9c5635c36a0d7519642a4b163ef",
+    "sim/tests/test_game_cleanup.py": "a7fb1fcae89c09790bdf15fa3f93c3bf68f87dcd013f807b017816b9bec7b1e0",
+    "sim/tests/test_game_direction.py": "d2adfe47e08119743556e5197f86e818b9d3c7926b13b90cdb831d6ddb46e28c",
+    "sim/tests/test_game_renderer.py": "76773389dcc918356a4edf16be2ec4eb8835c368654a0c7d1f92e9bd348fd238",
+    "sim/tests/test_game_restart.py": "7db38b75e7aa241d83348bc3331c450c7128c1cad0baa351ccd6f22e8b0399d2",
+    "sim/tests/test_game_state.py": "581319ef5c79cbd364d06a5c4c318fa9f88697238293910cf17a9833719a8706",
+    "sim/tests/test_hardware_sessions.py": "64f690e79a187e6c035ed1cc64eea3543b21471ec66d80c4ecc216e6ae569e24",
+    "sim/tests/test_no_iou.py": "1eea318cb6dd70e5cb7f0bf404f4fc4e0fa029e3b26dd08a61e1ab0127a8a836",
+    "sim/tests/test_no_timeout.py": "a25dc74eaa854ee059d5baf9a00e89525a243b23c9c744173267dfefd35d0f3c",
+    "sim/tests/test_single_frame.py": "476273d35f2cadb881dbd7481615c33c857ab242891ef67af36192aabdd2784f",
+    "sim/rtl/tb_ddr_hdmi.sv": "95944a9176f16df82994b178385fa831a69ad81cf15fe192212f268a1d83fbba",
+    "src/rtl/ddr_hdmi.v": "49cb809af0f59eaa6e80126058619c5d3d784db0402ed3389c0bde0420b67dcf",
+    "board/runtime/application/board_contract.py": "563beaa94dcd02cd1ba0a2f7e30c51b50f922924a122bf5918df7c8ff6454099",
+    "board/runtime/application/board_pipeline.py": "962271483248cf63bea17951a90ad6285d40f32bf012917151d9a2251e500210",
+    "board/runtime/application/capture.py": "14a67387c6493e50871e83131d485cc0ecb86aca95654251932b8ff798a45079",
+    "board/runtime/application/coin_game.py": "8fe276c7489eceadf76fa6462ab503d67f3128b2cf1af82318da9fcdcbe492b5",
+    "board/runtime/application/control.py": "04882cc79836c56403a725ce07e3aab532d6f3942a19235bed8f4b12539619ad",
+    "board/runtime/application/ddr_display.py": "e16bed18dd39493244bc6726420b6f7a77c012f11d0787533626de84dc460209",
+    "board/runtime/application/engine_runtime.py": "61a1b0805bb5b3b4896ba0cc3df6fe2759c9ef1ae9a95b7c1d72dc394d6bdbdd",
+    "board/runtime/application/game_renderer.py": "60ea17d62520f871fef0ae395b2ddc9d103aa4fc94d28e215c33868c1fe098b1",
+    "board/runtime/application/game_state.py": "b718b01b22fb49568207d6d5349523d1cb687c6a003767a72a7fbc9b5291716d",
+    "board/runtime/application/geometry.py": "cf7382f4f62abed849a3389b8704675e6e0b02e234a4b61f784e252b1cc749a7",
+    "board/runtime/application/output_boundary.py": "108c95d4f867ddbd3c7f492aae126ceee7273f46a62a8bc980987e0c52b61733",
+    "board/runtime/application/yolox_numpy.py": "0ff605756f0cef3046d35e688ccd0c0ec28c3f65ebbd48341c52de6280880166"
+  },
+  "scope": "Fresh offline checks of cleaned PS source and unchanged DDR RTL; no board access or Vivado rebuild.",
+  "package_revision": "gesture_coin_game_cleanup_20261103",
+  "board_tested_after_cleanup": false,
+  "build_rebuilt": false,
+  "hardware_bytes_unchanged": true,
+  "model_and_npz_unchanged": true,
+  "runtime_byte_identical_to_verified_manual_baseline": false,
+  "behavior_replay_identical": true,
+  "frozen_ip_members_verified": 579,
+  "build_cli_help_checked": true,
+  "build_cache_guard_checked": true,
+  "build_output_guard_checked": true,
+  "build_tcl_syntax_and_output_names_checked": true,
+  "runtime_manifest_sha256": "4ccc43a9d1b8f2bb04a5c209e452fbb64217a54bbb3f0a6f99594d4d00655756"
+}

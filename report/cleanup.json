@@ -1,0 +1,41 @@
+{
+  "package_revision": "gesture_coin_game_cleanup_20261103",
+  "date": "2026-11-03",
+  "removed_runtime_features": [
+    "motion prediction",
+    "ONNX Runtime fallback",
+    "ONNX standalone image CLI"
+  ],
+  "model_session_ids": [
+    "yolox",
+    "cnn"
+  ],
+  "board_assets": [
+    "assets/images.npz"
+  ],
+  "removed_stale_runtime_metadata": [
+    "deployment_status",
+    "unsupported_legacy"
+  ],
+  "hardware_sha256": {
+    "board/runtime/application/overlay/gesture_coin_game.bit": "f4e14a1c28d1a321d98919f1b635413550c2a42f3e9a2c9fc45378159a1f1e86",
+    "board/runtime/application/overlay/gesture_coin_game.hwh": "419b626d2a005f1e3f33ddc2c73e176513dccda171de90c440404131875d7ccf",
+    "build/checkpoints/coin_game/gesture_coin_game.hwh": "419b626d2a005f1e3f33ddc2c73e176513dccda171de90c440404131875d7ccf"
+  },
+  "protected_original_files_checked": 441,
+  "ps_source_mirrors_checked": 12,
+  "frozen_ip_members_verified": 579,
+  "python_tests": 45,
+  "rtl_scenarios": 7,
+  "equivalence": {
+    "pipeline_frames": 16,
+    "model_input_sha256_identical": true,
+    "pointing_and_control_outputs_identical": true,
+    "rendered_frames": 10,
+    "rendered_rgb565_sha256_identical": true,
+    "method": "Fixed neural outputs with real PS preprocessing, decoding, target/control and renderer; not a neural accuracy or FPGA numeric test."
+  },
+  "board_tested_after_cleanup": false,
+  "physical_build_rerun": false,
+  "historical_evidence": "Original board/physical/control evidence and pre-cleanup packaging verification are preserved; their source hashes describe the pre-cleanup baseline."
+}

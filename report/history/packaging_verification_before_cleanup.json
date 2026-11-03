@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "python_tests": 42,
+  "rtl_scenarios": 7,
+  "results": [
+    {
+      "name": "python",
+      "exit_code": 0,
+      "seconds": 1.7638614000002235
+    },
+    {
+      "name": "button_compile",
+      "exit_code": 0,
+      "seconds": 0.7418876000001546
+    },
+    {
+      "name": "button",
+      "exit_code": 0,
+      "seconds": 0.27911390000008396
+    },
+    {
+      "name": "fullwidth_compile",
+      "exit_code": 0,
+      "seconds": 0.07736479999994117
+    },
+    {
+      "name": "fullwidth",
+      "exit_code": 0,
+      "seconds": 1.6884957000002032
+    },
+    {
+      "name": "early_last_compile",
+      "exit_code": 0,
+      "seconds": 0.08100970000032248
+    },
+    {
+      "name": "early_last",
+      "exit_code": 0,
+      "seconds": 0.046374699999887525
+    },
+    {
+      "name": "missing_last_compile",
+      "exit_code": 0,
+      "seconds": 0.0754162000002907
+    },
+    {
+      "name": "missing_last",
+      "exit_code": 0,
+      "seconds": 0.04797439999993003
+    },
+    {
+      "name": "wrong_id_compile",
+      "exit_code": 0,
+      "seconds": 0.07519369999999981
+    },
+    {
+      "name": "wrong_id",
+      "exit_code": 0,
+      "seconds": 0.04755950000026132
+    },
+    {
+      "name": "slave_error_compile",
+      "exit_code": 0,
+      "seconds": 0.07814409999991767
+    },
+    {
+      "name": "slave_error",
+      "exit_code": 0,
+      "seconds": 0.046375500000067404
+    },
+    {
+      "name": "late_last_compile",
+      "exit_code": 0,
+      "seconds": 0.07484199999998964
+    },
+    {
+      "name": "late_last",
+      "exit_code": 0,
+      "seconds": 0.04777990000002319
+    }
+  ],
+  "source_sha256": {
+    "sim/tests/test_ddr_display.py": "5b1b9af70476794cc3ce068e645e81f2998a336c97c6ee2019bd8a73155e077c",
+    "sim/tests/test_detector_threshold.py": "a7b7143fc621cde494b30c9c0857fc9dbf93404aaa52b17b34a2aec38eaa20df",
+    "sim/tests/test_game_cleanup.py": "a7fb1fcae89c09790bdf15fa3f93c3bf68f87dcd013f807b017816b9bec7b1e0",
+    "sim/tests/test_game_direction.py": "d2adfe47e08119743556e5197f86e818b9d3c7926b13b90cdb831d6ddb46e28c",
+    "sim/tests/test_game_renderer.py": "76773389dcc918356a4edf16be2ec4eb8835c368654a0c7d1f92e9bd348fd238",
+    "sim/tests/test_game_restart.py": "7db38b75e7aa241d83348bc3331c450c7128c1cad0baa351ccd6f22e8b0399d2",
+    "sim/tests/test_game_state.py": "581319ef5c79cbd364d06a5c4c318fa9f88697238293910cf17a9833719a8706",
+    "sim/tests/test_no_iou.py": "21754c2f0eb10ad0525057c30d72a9c50054c8ce3e6703eb601ba7f80aa4db7b",
+    "sim/tests/test_no_timeout.py": "a25dc74eaa854ee059d5baf9a00e89525a243b23c9c744173267dfefd35d0f3c",
+    "sim/tests/test_single_frame.py": "476273d35f2cadb881dbd7481615c33c857ab242891ef67af36192aabdd2784f",
+    "sim/rtl/tb_ddr_hdmi.sv": "95944a9176f16df82994b178385fa831a69ad81cf15fe192212f268a1d83fbba",
+    "src/rtl/ddr_hdmi.v": "49cb809af0f59eaa6e80126058619c5d3d784db0402ed3389c0bde0420b67dcf",
+    "board/runtime/application/board_contract.py": "6eb236a7c40dfa17bf22c19cd665d0482885f09c5a9d30a0611ec3392c6cb22f",
+    "board/runtime/application/board_pipeline.py": "b811ab42d8f08680632e54df39392d2ecdd9c38266a56c7d8b2a02567341dad3",
+    "board/runtime/application/capture.py": "14a67387c6493e50871e83131d485cc0ecb86aca95654251932b8ff798a45079",
+    "board/runtime/application/coin_game.py": "434a6d761d99b39d0d0112a3946a987150f54cf9b799170b7beb4cda22827a24",
+    "board/runtime/application/control.py": "04882cc79836c56403a725ce07e3aab532d6f3942a19235bed8f4b12539619ad",
+    "board/runtime/application/ddr_display.py": "e16bed18dd39493244bc6726420b6f7a77c012f11d0787533626de84dc460209",
+    "board/runtime/application/engine_runtime.py": "c8a81ebbe9cab1c47a01ca2b61c01b82646ba909da5c6328b11fac2e2a21eec7",
+    "board/runtime/application/game_renderer.py": "60ea17d62520f871fef0ae395b2ddc9d103aa4fc94d28e215c33868c1fe098b1",
+    "board/runtime/application/game_state.py": "2cc6bd7cc425f37cb3f16fb0ee701783a21bd9d423420fc9dab5b5c12ea12907",
+    "board/runtime/application/geometry.py": "3bfc7ea7049ea41e05e4cd5470692391d24924c5ea0667a592caa74935b16c4f",
+    "board/runtime/application/motion.py": "54e2cea2487193734e17e2a77ba371f7071baaf37669b9818775714e841538d7",
+    "board/runtime/application/output_boundary.py": "108c95d4f867ddbd3c7f492aae126ceee7273f46a62a8bc980987e0c52b61733",
+    "board/runtime/application/yolox_numpy.py": "02d3e92c73ed5732510f2a0f13a6f3cb1c69b5ebdd85609379a399c561005e0b"
+  },
+  "scope": "Current packaged manual game:42 Python behavior tests and7 RTL scenarios rerun offline. No board access or new synthesis/route.",
+  "runtime_byte_identical_to_verified_manual_baseline": true,
+  "runtime_manifest_sha256": "bbba3e8eb97a2e7b9cd1b0dfceedabbaface00be19a8a02452ef8c1c6f4a8db3",
+  "goal_assistance_included": false,
+  "automatic_pathfinding_included": false,
+  "continuous_goal_velocity_included": false,
+  "frozen_ip_members_verified": 579,
+  "build_cli_help_checked": true,
+  "build_rebuilt": false,
+  "build_cache_guard_checked": true
+}

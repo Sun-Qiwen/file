@@ -1,0 +1,91 @@
+{
+  "build_completed": true,
+  "board_tests_completed": true,
+  "completion_basis": "project_author_confirmation_and_retained_evidence",
+  "completion_record": "report/build_status.json",
+  "execution_flags_scope": "bitstream_rebuilt and packaging_verification flags describe the cleanup/packaging operation only; board metrics retain their original test scope.",
+  "hardware_revision": "ddr_coin_game_btn0",
+  "physical_stage": "impl03",
+  "resources": {
+    "slice": 13163,
+    "lut": 43374,
+    "ff": 45198,
+    "bram36_equivalent": 119.5,
+    "dsp": 213
+  },
+  "previous_resources": {
+    "slice": 13156,
+    "bram36_equivalent": 119.5,
+    "dsp": 213
+  },
+  "timing_ns": {
+    "wns": 0.11,
+    "whs": 0.01,
+    "wpws": 0.538
+  },
+  "macs": 64,
+  "core_clock_mhz": 100,
+  "game": {
+    "event": "result",
+    "round": 1,
+    "score": 0,
+    "game_seconds": 6.0,
+    "elapsed_seconds": 6.2046337140000105,
+    "rendered_frames": 226,
+    "rendering_fps": 24.534145514697187,
+    "inference_frames": 8,
+    "scanout": {
+      "underflow_lines": 123,
+      "read_errors": 0,
+      "video_frames": 592,
+      "presented_frames": 226
+    },
+    "game_underflow_lines": 0,
+    "game_read_errors": 0
+  },
+  "python_tests": {
+    "current": 45,
+    "board_policy": 19
+  },
+  "rtl_scenarios": 7,
+  "physical_button_tested": false,
+  "synthetic_board_restart_qa": true,
+  "raw_cdc_critical": 53,
+  "limitations": [
+    "Physical BTN0 operation remains unverified unless physical_button_tested is true.",
+    "HDMI visual/electrical confirmation and fresh numeric A/B/A remain outside automated acceptance.",
+    "A pre-restart in-flight frame can briefly update preview and completed-inference count; its direction is rejected."
+  ],
+  "software_revision": "no_iou_conf015_single_frame_no_expiry",
+  "default_game_duration_seconds": 60,
+  "control_policy": {
+    "target_match_minimum_iou": null,
+    "reacquire_minimum_iou": null,
+    "stable_frames": 1,
+    "pointing_probability": 0.5,
+    "detector_confidence": 0.15,
+    "nms_threshold": 0.45,
+    "max_age_seconds": null,
+    "command_timeout_seconds": null,
+    "watchdog_enabled": false
+  },
+  "board_scope": "Pre-cleanup manual policy evidence:19 board policy tests and6-second camera game; not a board run of the cleaned PS code.",
+  "bitstream_rebuilt": false,
+  "packaging_verification": {
+    "python_tests": 45,
+    "rtl_scenarios": 7,
+    "runtime_unchanged": false,
+    "hardware_bytes_unchanged": true,
+    "model_and_npz_unchanged": true,
+    "automatic_pathfinding": false,
+    "board_tested_after_cleanup": false
+  },
+  "package_revision": "gesture_coin_game_cleanup_20261103",
+  "overlay_basename": "gesture_coin_game",
+  "build_materials": {
+    "original_synthesis_reports_included": true,
+    "source_binding_verified": true,
+    "new_full_rebuild_verified": false,
+    "record": "report/build_materials.json"
+  }
+}

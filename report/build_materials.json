@@ -1,0 +1,26 @@
+{
+  "build_completed": true,
+  "board_tests_completed": true,
+  "completion_basis": "project_author_confirmation_and_retained_evidence",
+  "completion_record": "report/build_status.json",
+  "execution_flags_scope": "Restoration of existing build materials; execution flags describe that restoration operation only.",
+  "materials_revision": "existing_build_reports_restored_20261103",
+  "hardware_revision": "ddr_coin_game_btn0",
+  "base_package_revision": "gesture_coin_game_cleanup_20261103",
+  "restored_existing_reports": [
+    "build/reports/synthesis/synthesis_utilization.rpt",
+    "build/reports/synthesis/synthesis_control_sets.rpt"
+  ],
+  "accepted_synthesis_record": "build/provenance/accepted_synthesis.json",
+  "artifact_binding": "build/provenance/artifact_binding.json",
+  "original_report_bytes_verified": true,
+  "synthesis_dcp_matches_original": true,
+  "current_rtl_and_button_constraints_match_original": true,
+  "original_implementation_reports_preserved": true,
+  "runtime_source_changed": false,
+  "original_bit_hwh_dcp_changed": false,
+  "new_full_rebuild_verified": false,
+  "board_accessed": false,
+  "temporary_artifacts_in_delivery": false,
+  "new_build_artifacts_included": false
+}
