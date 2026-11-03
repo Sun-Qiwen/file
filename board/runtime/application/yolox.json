@@ -1,0 +1,7358 @@
+{
+  "command_count": 169,
+  "arena_bytes": 3072000,
+  "input_offset": 0,
+  "weight_bytes": 881344,
+  "parameter_words": 16958,
+  "nodes": [
+    {
+      "name": "focus",
+      "blob": "503",
+      "first": 0,
+      "last": 1,
+      "offset": 921600,
+      "elements": 921600,
+      "shape": [
+        12,
+        240,
+        320
+      ],
+      "inputs": [
+        "input"
+      ],
+      "input_shapes": [
+        [
+          3,
+          480,
+          640
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_41",
+      "blob": "686",
+      "first": 1,
+      "last": 2,
+      "offset": 1843200,
+      "elements": 1228800,
+      "shape": [
+        16,
+        240,
+        320
+      ],
+      "inputs": [
+        "503"
+      ],
+      "input_shapes": [
+        [
+          12,
+          240,
+          320
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_43",
+      "blob": "689",
+      "first": 2,
+      "last": 3,
+      "offset": 0,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "686"
+      ],
+      "input_shapes": [
+        [
+          16,
+          240,
+          320
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_45",
+      "blob": "692",
+      "first": 3,
+      "last": 4,
+      "offset": 307200,
+      "elements": 614400,
+      "shape": [
+        32,
+        120,
+        160
+      ],
+      "inputs": [
+        "689"
+      ],
+      "input_shapes": [
+        [
+          16,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_47",
+      "blob": "695",
+      "first": 4,
+      "last": 5,
+      "offset": 0,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "692_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          32,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_49",
+      "blob": "698",
+      "first": 5,
+      "last": 6,
+      "offset": 921600,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "692_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          32,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_51",
+      "blob": "701",
+      "first": 6,
+      "last": 7,
+      "offset": 307200,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "695_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          16,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_53",
+      "blob": "704",
+      "first": 7,
+      "last": 8,
+      "offset": 614400,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "701"
+      ],
+      "input_shapes": [
+        [
+          16,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_55",
+      "blob": "707",
+      "first": 8,
+      "last": 9,
+      "offset": 307200,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "704"
+      ],
+      "input_shapes": [
+        [
+          16,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_57",
+      "blob": "708",
+      "first": 9,
+      "last": 10,
+      "offset": 614400,
+      "elements": 307200,
+      "shape": [
+        16,
+        120,
+        160
+      ],
+      "inputs": [
+        "707",
+        "695_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          16,
+          120,
+          160
+        ],
+        [
+          16,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_58",
+      "blob": "709",
+      "first": 10,
+      "last": 12,
+      "offset": 0,
+      "elements": 614400,
+      "shape": [
+        32,
+        120,
+        160
+      ],
+      "inputs": [
+        "708",
+        "698"
+      ],
+      "input_shapes": [
+        [
+          16,
+          120,
+          160
+        ],
+        [
+          16,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_59",
+      "blob": "712",
+      "first": 12,
+      "last": 13,
+      "offset": 614400,
+      "elements": 614400,
+      "shape": [
+        32,
+        120,
+        160
+      ],
+      "inputs": [
+        "709"
+      ],
+      "input_shapes": [
+        [
+          32,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_61",
+      "blob": "715",
+      "first": 13,
+      "last": 14,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "712"
+      ],
+      "input_shapes": [
+        [
+          32,
+          120,
+          160
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_63",
+      "blob": "718",
+      "first": 14,
+      "last": 15,
+      "offset": 153600,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "715"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_65",
+      "blob": "721",
+      "first": 15,
+      "last": 16,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "718_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_67",
+      "blob": "724",
+      "first": 16,
+      "last": 17,
+      "offset": 460800,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "718_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_69",
+      "blob": "727",
+      "first": 17,
+      "last": 18,
+      "offset": 153600,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "721_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_71",
+      "blob": "730",
+      "first": 18,
+      "last": 19,
+      "offset": 307200,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "727"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_73",
+      "blob": "733",
+      "first": 19,
+      "last": 20,
+      "offset": 153600,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "730"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_75",
+      "blob": "734",
+      "first": 20,
+      "last": 21,
+      "offset": 307200,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "733",
+        "721_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ],
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_76",
+      "blob": "737",
+      "first": 21,
+      "last": 22,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "734_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_78",
+      "blob": "740",
+      "first": 22,
+      "last": 23,
+      "offset": 153600,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "737"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_80",
+      "blob": "743",
+      "first": 23,
+      "last": 24,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "740"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_82",
+      "blob": "744",
+      "first": 24,
+      "last": 25,
+      "offset": 153600,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "743",
+        "734_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ],
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_83",
+      "blob": "747",
+      "first": 25,
+      "last": 26,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "744_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_85",
+      "blob": "750",
+      "first": 26,
+      "last": 27,
+      "offset": 307200,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "747"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_87",
+      "blob": "753",
+      "first": 27,
+      "last": 28,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "750"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_89",
+      "blob": "754",
+      "first": 28,
+      "last": 29,
+      "offset": 307200,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "753",
+        "744_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ],
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_90",
+      "blob": "755",
+      "first": 29,
+      "last": 31,
+      "offset": 0,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "754",
+        "724"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ],
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_91",
+      "blob": "758",
+      "first": 31,
+      "last": 32,
+      "offset": 307200,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "755"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_93",
+      "blob": "761",
+      "first": 32,
+      "last": 33,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "758_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_95",
+      "blob": "764",
+      "first": 33,
+      "last": 34,
+      "offset": 76800,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "761"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_97",
+      "blob": "767",
+      "first": 34,
+      "last": 35,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "764_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_99",
+      "blob": "770",
+      "first": 35,
+      "last": 36,
+      "offset": 230400,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "764_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_101",
+      "blob": "773",
+      "first": 36,
+      "last": 37,
+      "offset": 76800,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "767_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_103",
+      "blob": "776",
+      "first": 37,
+      "last": 38,
+      "offset": 153600,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "773"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_105",
+      "blob": "779",
+      "first": 38,
+      "last": 39,
+      "offset": 76800,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "776"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_107",
+      "blob": "780",
+      "first": 39,
+      "last": 40,
+      "offset": 153600,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "779",
+        "767_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_108",
+      "blob": "783",
+      "first": 40,
+      "last": 41,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "780_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_110",
+      "blob": "786",
+      "first": 41,
+      "last": 42,
+      "offset": 76800,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "783"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_112",
+      "blob": "789",
+      "first": 42,
+      "last": 43,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "786"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_114",
+      "blob": "790",
+      "first": 43,
+      "last": 44,
+      "offset": 76800,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "789",
+        "780_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_115",
+      "blob": "793",
+      "first": 44,
+      "last": 45,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "790_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_117",
+      "blob": "796",
+      "first": 45,
+      "last": 46,
+      "offset": 153600,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "793"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_119",
+      "blob": "799",
+      "first": 46,
+      "last": 47,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "796"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Add_121",
+      "blob": "800",
+      "first": 47,
+      "last": 48,
+      "offset": 153600,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "799",
+        "790_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_122",
+      "blob": "801",
+      "first": 48,
+      "last": 50,
+      "offset": 0,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "800",
+        "770"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_123",
+      "blob": "804",
+      "first": 50,
+      "last": 51,
+      "offset": 153600,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "801"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_125",
+      "blob": "807",
+      "first": 51,
+      "last": 52,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "804_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_127",
+      "blob": "810",
+      "first": 52,
+      "last": 53,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "807"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_129",
+      "blob": "813",
+      "first": 53,
+      "last": 54,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "810"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "MaxPool_131",
+      "blob": "814",
+      "first": 54,
+      "last": 55,
+      "offset": 38400,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "813_splitncnn_3"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "MaxPool_132",
+      "blob": "815",
+      "first": 55,
+      "last": 56,
+      "offset": 76800,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "813_splitncnn_2"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "MaxPool_133",
+      "blob": "816",
+      "first": 56,
+      "last": 57,
+      "offset": 115200,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "813_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_134",
+      "blob": "817",
+      "first": 57,
+      "last": 61,
+      "offset": 614400,
+      "elements": 153600,
+      "shape": [
+        512,
+        15,
+        20
+      ],
+      "inputs": [
+        "813_splitncnn_0",
+        "814",
+        "815",
+        "816"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ],
+        [
+          128,
+          15,
+          20
+        ],
+        [
+          128,
+          15,
+          20
+        ],
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_135",
+      "blob": "820",
+      "first": 61,
+      "last": 62,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "817"
+      ],
+      "input_shapes": [
+        [
+          512,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_137",
+      "blob": "823",
+      "first": 62,
+      "last": 63,
+      "offset": 76800,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "820_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_139",
+      "blob": "826",
+      "first": 63,
+      "last": 64,
+      "offset": 115200,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "820_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_141",
+      "blob": "829",
+      "first": 64,
+      "last": 65,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "823"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_143",
+      "blob": "832",
+      "first": 65,
+      "last": 66,
+      "offset": 38400,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "829"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_145",
+      "blob": "835",
+      "first": 66,
+      "last": 67,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "832"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_147",
+      "blob": "836",
+      "first": 67,
+      "last": 69,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "835",
+        "826"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ],
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_148",
+      "blob": "839",
+      "first": 69,
+      "last": 70,
+      "offset": 614400,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "836"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_150",
+      "blob": "842",
+      "first": 70,
+      "last": 71,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "839"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Resize_153",
+      "blob": "847",
+      "first": 71,
+      "last": 72,
+      "offset": 614400,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "842_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_154",
+      "blob": "848",
+      "first": 72,
+      "last": 74,
+      "offset": 768000,
+      "elements": 307200,
+      "shape": [
+        256,
+        30,
+        40
+      ],
+      "inputs": [
+        "847",
+        "804_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ],
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_155",
+      "blob": "851",
+      "first": 74,
+      "last": 75,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "848_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          256,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_157",
+      "blob": "854",
+      "first": 75,
+      "last": 76,
+      "offset": 115200,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "848_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          256,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_159",
+      "blob": "857",
+      "first": 76,
+      "last": 77,
+      "offset": 192000,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "851"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_161",
+      "blob": "860",
+      "first": 77,
+      "last": 78,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "857"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_163",
+      "blob": "863",
+      "first": 78,
+      "last": 79,
+      "offset": 192000,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "860"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_165",
+      "blob": "864",
+      "first": 79,
+      "last": 81,
+      "offset": 614400,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "863",
+        "854"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_166",
+      "blob": "867",
+      "first": 81,
+      "last": 82,
+      "offset": 38400,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "864"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_168",
+      "blob": "870",
+      "first": 82,
+      "last": 83,
+      "offset": 192000,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "867"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Resize_171",
+      "blob": "875",
+      "first": 83,
+      "last": 84,
+      "offset": 614400,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "870_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_172",
+      "blob": "876",
+      "first": 84,
+      "last": 86,
+      "offset": 921600,
+      "elements": 614400,
+      "shape": [
+        128,
+        60,
+        80
+      ],
+      "inputs": [
+        "875",
+        "758_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ],
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_173",
+      "blob": "879",
+      "first": 86,
+      "last": 87,
+      "offset": 38400,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "876_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_175",
+      "blob": "882",
+      "first": 87,
+      "last": 88,
+      "offset": 268800,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "876_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          128,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_177",
+      "blob": "885",
+      "first": 88,
+      "last": 89,
+      "offset": 422400,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "879"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_179",
+      "blob": "888",
+      "first": 89,
+      "last": 90,
+      "offset": 38400,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "885"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_181",
+      "blob": "891",
+      "first": 90,
+      "last": 91,
+      "offset": 422400,
+      "elements": 153600,
+      "shape": [
+        32,
+        60,
+        80
+      ],
+      "inputs": [
+        "888"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_183",
+      "blob": "892",
+      "first": 91,
+      "last": 93,
+      "offset": 576000,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "891",
+        "882"
+      ],
+      "input_shapes": [
+        [
+          32,
+          60,
+          80
+        ],
+        [
+          32,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_184",
+      "blob": "895",
+      "first": 93,
+      "last": 94,
+      "offset": 268800,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "892"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_186",
+      "blob": "898",
+      "first": 94,
+      "last": 95,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "895_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_188",
+      "blob": "901",
+      "first": 95,
+      "last": 96,
+      "offset": 115200,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "898"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_190",
+      "blob": "902",
+      "first": 96,
+      "last": 98,
+      "offset": 576000,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "901",
+        "870_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_191",
+      "blob": "905",
+      "first": 98,
+      "last": 99,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "902_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_193",
+      "blob": "908",
+      "first": 99,
+      "last": 100,
+      "offset": 115200,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "902_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_195",
+      "blob": "911",
+      "first": 100,
+      "last": 101,
+      "offset": 192000,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "905"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_197",
+      "blob": "914",
+      "first": 101,
+      "last": 102,
+      "offset": 38400,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "911"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_199",
+      "blob": "917",
+      "first": 102,
+      "last": 103,
+      "offset": 192000,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "914"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_201",
+      "blob": "918",
+      "first": 103,
+      "last": 105,
+      "offset": 576000,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "917",
+        "908"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ],
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_202",
+      "blob": "921",
+      "first": 105,
+      "last": 106,
+      "offset": 38400,
+      "elements": 153600,
+      "shape": [
+        128,
+        30,
+        40
+      ],
+      "inputs": [
+        "918"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_204",
+      "blob": "924",
+      "first": 106,
+      "last": 107,
+      "offset": 192000,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "921_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_206",
+      "blob": "927",
+      "first": 107,
+      "last": 108,
+      "offset": 230400,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "924"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_208",
+      "blob": "928",
+      "first": 108,
+      "last": 110,
+      "offset": 576000,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "927",
+        "842_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ],
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_209",
+      "blob": "931",
+      "first": 110,
+      "last": 111,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "928_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_211",
+      "blob": "934",
+      "first": 111,
+      "last": 112,
+      "offset": 192000,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "928_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_213",
+      "blob": "937",
+      "first": 112,
+      "last": 113,
+      "offset": 230400,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "931"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_215",
+      "blob": "940",
+      "first": 113,
+      "last": 114,
+      "offset": 0,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "937"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_217",
+      "blob": "943",
+      "first": 114,
+      "last": 115,
+      "offset": 230400,
+      "elements": 38400,
+      "shape": [
+        128,
+        15,
+        20
+      ],
+      "inputs": [
+        "940"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_219",
+      "blob": "944",
+      "first": 115,
+      "last": 117,
+      "offset": 576000,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "943",
+        "934"
+      ],
+      "input_shapes": [
+        [
+          128,
+          15,
+          20
+        ],
+        [
+          128,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_220",
+      "blob": "947",
+      "first": 117,
+      "last": 118,
+      "offset": 192000,
+      "elements": 76800,
+      "shape": [
+        256,
+        15,
+        20
+      ],
+      "inputs": [
+        "944"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_222",
+      "blob": "950",
+      "first": 118,
+      "last": 119,
+      "offset": 576000,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "895_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_224",
+      "blob": "953",
+      "first": 119,
+      "last": 120,
+      "offset": 268800,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "950_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_226",
+      "blob": "956",
+      "first": 120,
+      "last": 121,
+      "offset": 883200,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "953"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_228",
+      "blob": "959",
+      "first": 121,
+      "last": 122,
+      "offset": 268800,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "956"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_230",
+      "blob": "962",
+      "first": 122,
+      "last": 123,
+      "offset": 883200,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "959"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_232",
+      "blob": "979",
+      "first": 123,
+      "last": 125,
+      "offset": 0,
+      "elements": 4800,
+      "shape": [
+        1,
+        60,
+        80
+      ],
+      "inputs": [
+        "962"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_233",
+      "blob": "966",
+      "first": 125,
+      "last": 126,
+      "offset": 268800,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "950_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_235",
+      "blob": "969",
+      "first": 126,
+      "last": 127,
+      "offset": 576000,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "966"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_237",
+      "blob": "972",
+      "first": 127,
+      "last": 128,
+      "offset": 268800,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "969"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_239",
+      "blob": "975",
+      "first": 128,
+      "last": 129,
+      "offset": 576000,
+      "elements": 307200,
+      "shape": [
+        64,
+        60,
+        80
+      ],
+      "inputs": [
+        "972"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_241",
+      "blob": "976",
+      "first": 129,
+      "last": 130,
+      "offset": 4800,
+      "elements": 19200,
+      "shape": [
+        4,
+        60,
+        80
+      ],
+      "inputs": [
+        "975_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_242",
+      "blob": "978",
+      "first": 130,
+      "last": 132,
+      "offset": 24000,
+      "elements": 4800,
+      "shape": [
+        1,
+        60,
+        80
+      ],
+      "inputs": [
+        "975_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          60,
+          80
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_245",
+      "blob": "980",
+      "first": 132,
+      "last": 135,
+      "offset": 268800,
+      "elements": 28800,
+      "shape": [
+        6,
+        60,
+        80
+      ],
+      "inputs": [
+        "976",
+        "978",
+        "979"
+      ],
+      "input_shapes": [
+        [
+          4,
+          60,
+          80
+        ],
+        [
+          1,
+          60,
+          80
+        ],
+        [
+          1,
+          60,
+          80
+        ]
+      ],
+      "head": true
+    },
+    {
+      "name": "Conv_246",
+      "blob": "983",
+      "first": 135,
+      "last": 136,
+      "offset": 297600,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "921_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          128,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_248",
+      "blob": "986",
+      "first": 136,
+      "last": 137,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "983_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_250",
+      "blob": "989",
+      "first": 137,
+      "last": 138,
+      "offset": 76800,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "986"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_252",
+      "blob": "992",
+      "first": 138,
+      "last": 139,
+      "offset": 0,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "989"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_254",
+      "blob": "995",
+      "first": 139,
+      "last": 140,
+      "offset": 76800,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "992"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_256",
+      "blob": "1012",
+      "first": 140,
+      "last": 142,
+      "offset": 0,
+      "elements": 1200,
+      "shape": [
+        1,
+        30,
+        40
+      ],
+      "inputs": [
+        "995"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_257",
+      "blob": "999",
+      "first": 142,
+      "last": 143,
+      "offset": 1216,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "983_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_259",
+      "blob": "1002",
+      "first": 143,
+      "last": 144,
+      "offset": 78016,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "999"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_261",
+      "blob": "1005",
+      "first": 144,
+      "last": 145,
+      "offset": 1216,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "1002"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_263",
+      "blob": "1008",
+      "first": 145,
+      "last": 146,
+      "offset": 78016,
+      "elements": 76800,
+      "shape": [
+        64,
+        30,
+        40
+      ],
+      "inputs": [
+        "1005"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_265",
+      "blob": "1009",
+      "first": 146,
+      "last": 147,
+      "offset": 1216,
+      "elements": 4800,
+      "shape": [
+        4,
+        30,
+        40
+      ],
+      "inputs": [
+        "1008_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_266",
+      "blob": "1011",
+      "first": 147,
+      "last": 149,
+      "offset": 6016,
+      "elements": 1200,
+      "shape": [
+        1,
+        30,
+        40
+      ],
+      "inputs": [
+        "1008_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          30,
+          40
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_269",
+      "blob": "1013",
+      "first": 149,
+      "last": 152,
+      "offset": 7232,
+      "elements": 7200,
+      "shape": [
+        6,
+        30,
+        40
+      ],
+      "inputs": [
+        "1009",
+        "1011",
+        "1012"
+      ],
+      "input_shapes": [
+        [
+          4,
+          30,
+          40
+        ],
+        [
+          1,
+          30,
+          40
+        ],
+        [
+          1,
+          30,
+          40
+        ]
+      ],
+      "head": true
+    },
+    {
+      "name": "Conv_270",
+      "blob": "1016",
+      "first": 152,
+      "last": 153,
+      "offset": 14464,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "947"
+      ],
+      "input_shapes": [
+        [
+          256,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_272",
+      "blob": "1019",
+      "first": 153,
+      "last": 154,
+      "offset": 33664,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1016_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_274",
+      "blob": "1022",
+      "first": 154,
+      "last": 155,
+      "offset": 52864,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1019"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_276",
+      "blob": "1025",
+      "first": 155,
+      "last": 156,
+      "offset": 33664,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1022"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_278",
+      "blob": "1028",
+      "first": 156,
+      "last": 157,
+      "offset": 52864,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1025"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_280",
+      "blob": "1045",
+      "first": 157,
+      "last": 159,
+      "offset": 0,
+      "elements": 300,
+      "shape": [
+        1,
+        15,
+        20
+      ],
+      "inputs": [
+        "1028"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_281",
+      "blob": "1032",
+      "first": 159,
+      "last": 160,
+      "offset": 33664,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1016_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_283",
+      "blob": "1035",
+      "first": 160,
+      "last": 161,
+      "offset": 14464,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1032"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_285",
+      "blob": "1038",
+      "first": 161,
+      "last": 162,
+      "offset": 33664,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1035"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_287",
+      "blob": "1041",
+      "first": 162,
+      "last": 163,
+      "offset": 14464,
+      "elements": 19200,
+      "shape": [
+        64,
+        15,
+        20
+      ],
+      "inputs": [
+        "1038"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_289",
+      "blob": "1042",
+      "first": 163,
+      "last": 164,
+      "offset": 320,
+      "elements": 1200,
+      "shape": [
+        4,
+        15,
+        20
+      ],
+      "inputs": [
+        "1041_splitncnn_1"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Conv_290",
+      "blob": "1044",
+      "first": 164,
+      "last": 166,
+      "offset": 1536,
+      "elements": 300,
+      "shape": [
+        1,
+        15,
+        20
+      ],
+      "inputs": [
+        "1041_splitncnn_0"
+      ],
+      "input_shapes": [
+        [
+          64,
+          15,
+          20
+        ]
+      ],
+      "head": false
+    },
+    {
+      "name": "Concat_293",
+      "blob": "1046",
+      "first": 166,
+      "last": 169,
+      "offset": 1856,
+      "elements": 1800,
+      "shape": [
+        6,
+        15,
+        20
+      ],
+      "inputs": [
+        "1042",
+        "1044",
+        "1045"
+      ],
+      "input_shapes": [
+        [
+          4,
+          15,
+          20
+        ],
+        [
+          1,
+          15,
+          20
+        ],
+        [
+          1,
+          15,
+          20
+        ]
+      ],
+      "head": true
+    }
+  ],
+  "commands": [
+    {
+      "kind": 1,
+      "a": 0,
+      "b": 0,
+      "out": 921600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 3,
+      "co": 0,
+      "h": 480,
+      "w": 640,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 921600,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 921600,
+      "b": 0,
+      "out": 1843200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 16,
+      "c": 12,
+      "co": 16,
+      "h": 240,
+      "w": 320,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 1843200,
+      "b": 0,
+      "out": 0,
+      "weights": 216,
+      "bias": 32,
+      "mult": 48,
+      "c": 16,
+      "co": 16,
+      "h": 240,
+      "w": 320,
+      "k": 3,
+      "stride": 2,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 307200,
+      "weights": 234,
+      "bias": 64,
+      "mult": 96,
+      "c": 16,
+      "co": 32,
+      "h": 120,
+      "w": 160,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 0,
+      "weights": 298,
+      "bias": 128,
+      "mult": 144,
+      "c": 32,
+      "co": 16,
+      "h": 120,
+      "w": 160,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 921600,
+      "weights": 362,
+      "bias": 160,
+      "mult": 176,
+      "c": 32,
+      "co": 16,
+      "h": 120,
+      "w": 160,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 307200,
+      "weights": 426,
+      "bias": 192,
+      "mult": 208,
+      "c": 16,
+      "co": 16,
+      "h": 120,
+      "w": 160,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 614400,
+      "weights": 458,
+      "bias": 224,
+      "mult": 240,
+      "c": 16,
+      "co": 16,
+      "h": 120,
+      "w": 160,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 614400,
+      "b": 0,
+      "out": 307200,
+      "weights": 476,
+      "bias": 256,
+      "mult": 272,
+      "c": 16,
+      "co": 16,
+      "h": 120,
+      "w": 160,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 307200,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 307200,
+      "ma": 893560997,
+      "mb": 634183313,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 614400,
+      "b": 0,
+      "out": 0,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 307200,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 921600,
+      "b": 0,
+      "out": 307200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 307200,
+      "ma": 776508857,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 614400,
+      "weights": 508,
+      "bias": 288,
+      "mult": 320,
+      "c": 32,
+      "co": 32,
+      "h": 120,
+      "w": 160,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 614400,
+      "b": 0,
+      "out": 0,
+      "weights": 636,
+      "bias": 352,
+      "mult": 384,
+      "c": 32,
+      "co": 32,
+      "h": 120,
+      "w": 160,
+      "k": 3,
+      "stride": 2,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 153600,
+      "weights": 672,
+      "bias": 416,
+      "mult": 480,
+      "c": 32,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 928,
+      "bias": 544,
+      "mult": 576,
+      "c": 64,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 460800,
+      "weights": 1184,
+      "bias": 608,
+      "mult": 640,
+      "c": 64,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 153600,
+      "weights": 1440,
+      "bias": 672,
+      "mult": 704,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 307200,
+      "weights": 1568,
+      "bias": 736,
+      "mult": 768,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 153600,
+      "weights": 1604,
+      "bias": 800,
+      "mult": 832,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 153600,
+      "b": 0,
+      "out": 307200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 787162237,
+      "mb": 712085707,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 0,
+      "weights": 1732,
+      "bias": 864,
+      "mult": 896,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 153600,
+      "weights": 1860,
+      "bias": 928,
+      "mult": 960,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 1896,
+      "bias": 992,
+      "mult": 1024,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 0,
+      "b": 307200,
+      "out": 153600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 775330095,
+      "mb": 859412173,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 2024,
+      "bias": 1056,
+      "mult": 1088,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 307200,
+      "weights": 2152,
+      "bias": 1120,
+      "mult": 1152,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 0,
+      "weights": 2188,
+      "bias": 1184,
+      "mult": 1216,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 0,
+      "b": 153600,
+      "out": 307200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 557308726,
+      "mb": 773456602,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 307200,
+      "b": 0,
+      "out": 0,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 460800,
+      "b": 0,
+      "out": 153600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 663252961,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 307200,
+      "weights": 2316,
+      "bias": 1248,
+      "mult": 1312,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 307200,
+      "b": 0,
+      "out": 0,
+      "weights": 2828,
+      "bias": 1376,
+      "mult": 1440,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 2,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 2900,
+      "bias": 1504,
+      "mult": 1632,
+      "c": 64,
+      "co": 128,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 0,
+      "weights": 3924,
+      "bias": 1760,
+      "mult": 1824,
+      "c": 128,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 230400,
+      "weights": 4948,
+      "bias": 1888,
+      "mult": 1952,
+      "c": 128,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 5972,
+      "bias": 2016,
+      "mult": 2080,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 153600,
+      "weights": 6484,
+      "bias": 2144,
+      "mult": 2208,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 76800,
+      "weights": 6556,
+      "bias": 2272,
+      "mult": 2336,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 76800,
+      "b": 0,
+      "out": 153600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 799324903,
+      "mb": 1073741824,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 7068,
+      "bias": 2400,
+      "mult": 2464,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 7580,
+      "bias": 2528,
+      "mult": 2592,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 0,
+      "weights": 7652,
+      "bias": 2656,
+      "mult": 2720,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 0,
+      "b": 153600,
+      "out": 76800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 651213510,
+      "mb": 514621077,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 0,
+      "weights": 8164,
+      "bias": 2784,
+      "mult": 2848,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 153600,
+      "weights": 8676,
+      "bias": 2912,
+      "mult": 2976,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 8748,
+      "bias": 3040,
+      "mult": 3104,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 2,
+      "a": 0,
+      "b": 76800,
+      "out": 153600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 783606862,
+      "mb": 1073741824,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 230400,
+      "b": 0,
+      "out": 76800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 787156475,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 153600,
+      "weights": 9260,
+      "bias": 3168,
+      "mult": 3296,
+      "c": 128,
+      "co": 128,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 153600,
+      "b": 0,
+      "out": 0,
+      "weights": 11308,
+      "bias": 3424,
+      "mult": 3552,
+      "c": 128,
+      "co": 128,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 2,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 38400,
+      "weights": 11452,
+      "bias": 3680,
+      "mult": 3936,
+      "c": 128,
+      "co": 256,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 0,
+      "weights": 15548,
+      "bias": 4192,
+      "mult": 4320,
+      "c": 256,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 4,
+      "a": 0,
+      "b": 0,
+      "out": 38400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 128,
+      "co": 0,
+      "h": 15,
+      "w": 20,
+      "k": 5,
+      "stride": 0,
+      "pad": 2,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 4,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 128,
+      "co": 0,
+      "h": 15,
+      "w": 20,
+      "k": 9,
+      "stride": 0,
+      "pad": 4,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 4,
+      "a": 0,
+      "b": 0,
+      "out": 115200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 128,
+      "co": 0,
+      "h": 15,
+      "w": 20,
+      "k": 13,
+      "stride": 0,
+      "pad": 6,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 0,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 38400,
+      "b": 0,
+      "out": 652800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 76800,
+      "b": 0,
+      "out": 691200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 115200,
+      "b": 0,
+      "out": 729600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 614400,
+      "b": 0,
+      "out": 0,
+      "weights": 19644,
+      "bias": 4448,
+      "mult": 4704,
+      "c": 512,
+      "co": 256,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 36028,
+      "bias": 4960,
+      "mult": 5088,
+      "c": 256,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 115200,
+      "weights": 40124,
+      "bias": 5216,
+      "mult": 5344,
+      "c": 256,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 0,
+      "weights": 44220,
+      "bias": 5472,
+      "mult": 5600,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 38400,
+      "weights": 46268,
+      "bias": 5728,
+      "mult": 5856,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 0,
+      "weights": 46412,
+      "bias": 5984,
+      "mult": 6112,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 0,
+      "b": 0,
+      "out": 38400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 115200,
+      "b": 0,
+      "out": 76800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1024070824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 614400,
+      "weights": 48460,
+      "bias": 6240,
+      "mult": 6496,
+      "c": 256,
+      "co": 256,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 614400,
+      "b": 0,
+      "out": 0,
+      "weights": 56652,
+      "bias": 6752,
+      "mult": 6880,
+      "c": 256,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 5,
+      "a": 0,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 128,
+      "co": 0,
+      "h": 15,
+      "w": 20,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 614400,
+      "b": 0,
+      "out": 768000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 153600,
+      "b": 0,
+      "out": 921600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 659948871,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 768000,
+      "b": 0,
+      "out": 38400,
+      "weights": 60748,
+      "bias": 7008,
+      "mult": 7072,
+      "c": 256,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 768000,
+      "b": 0,
+      "out": 115200,
+      "weights": 62796,
+      "bias": 7136,
+      "mult": 7200,
+      "c": 256,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 192000,
+      "weights": 64844,
+      "bias": 7264,
+      "mult": 7328,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 192000,
+      "b": 0,
+      "out": 38400,
+      "weights": 65356,
+      "bias": 7392,
+      "mult": 7456,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 192000,
+      "weights": 65428,
+      "bias": 7520,
+      "mult": 7584,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 192000,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 115200,
+      "b": 0,
+      "out": 691200,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 216629166,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 614400,
+      "b": 0,
+      "out": 38400,
+      "weights": 65940,
+      "bias": 7648,
+      "mult": 7776,
+      "c": 128,
+      "co": 128,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 192000,
+      "weights": 67988,
+      "bias": 7904,
+      "mult": 7968,
+      "c": 128,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 5,
+      "a": 192000,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 64,
+      "co": 0,
+      "h": 30,
+      "w": 40,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 307200,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 614400,
+      "b": 0,
+      "out": 921600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 307200,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 307200,
+      "b": 0,
+      "out": 1228800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 307200,
+      "ma": 259291979,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 921600,
+      "b": 0,
+      "out": 38400,
+      "weights": 69012,
+      "bias": 8032,
+      "mult": 8064,
+      "c": 128,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 921600,
+      "b": 0,
+      "out": 268800,
+      "weights": 69524,
+      "bias": 8096,
+      "mult": 8128,
+      "c": 128,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 422400,
+      "weights": 70036,
+      "bias": 8160,
+      "mult": 8192,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 422400,
+      "b": 0,
+      "out": 38400,
+      "weights": 70164,
+      "bias": 8224,
+      "mult": 8256,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 422400,
+      "weights": 70200,
+      "bias": 8288,
+      "mult": 8320,
+      "c": 32,
+      "co": 32,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 422400,
+      "b": 0,
+      "out": 576000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 242479747,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 268800,
+      "b": 0,
+      "out": 729600,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 153600,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 268800,
+      "weights": 70328,
+      "bias": 8352,
+      "mult": 8416,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 268800,
+      "b": 0,
+      "out": 38400,
+      "weights": 70840,
+      "bias": 8480,
+      "mult": 8544,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 2,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 115200,
+      "weights": 70912,
+      "bias": 8608,
+      "mult": 8672,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 115200,
+      "b": 0,
+      "out": 576000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 192000,
+      "b": 0,
+      "out": 652800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 754349249,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 38400,
+      "weights": 71424,
+      "bias": 8736,
+      "mult": 8800,
+      "c": 128,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 115200,
+      "weights": 72448,
+      "bias": 8864,
+      "mult": 8928,
+      "c": 128,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 192000,
+      "weights": 73472,
+      "bias": 8992,
+      "mult": 9056,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 192000,
+      "b": 0,
+      "out": 38400,
+      "weights": 73984,
+      "bias": 9120,
+      "mult": 9184,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 192000,
+      "weights": 74056,
+      "bias": 9248,
+      "mult": 9312,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 192000,
+      "b": 0,
+      "out": 576000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 178640751,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 115200,
+      "b": 0,
+      "out": 652800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 76800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 38400,
+      "weights": 74568,
+      "bias": 9376,
+      "mult": 9504,
+      "c": 128,
+      "co": 128,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 192000,
+      "weights": 76616,
+      "bias": 9632,
+      "mult": 9760,
+      "c": 128,
+      "co": 128,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 2,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 192000,
+      "b": 0,
+      "out": 230400,
+      "weights": 76760,
+      "bias": 9888,
+      "mult": 10016,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 230400,
+      "b": 0,
+      "out": 576000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 0,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 607432303,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 0,
+      "weights": 78808,
+      "bias": 10144,
+      "mult": 10272,
+      "c": 256,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 192000,
+      "weights": 82904,
+      "bias": 10400,
+      "mult": 10528,
+      "c": 256,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 230400,
+      "weights": 87000,
+      "bias": 10656,
+      "mult": 10784,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 230400,
+      "b": 0,
+      "out": 0,
+      "weights": 89048,
+      "bias": 10912,
+      "mult": 11040,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 230400,
+      "weights": 89192,
+      "bias": 11168,
+      "mult": 11296,
+      "c": 128,
+      "co": 128,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 230400,
+      "b": 0,
+      "out": 576000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 721302541,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 192000,
+      "b": 0,
+      "out": 614400,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 38400,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 192000,
+      "weights": 91240,
+      "bias": 11424,
+      "mult": 11680,
+      "c": 256,
+      "co": 256,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 268800,
+      "b": 0,
+      "out": 576000,
+      "weights": 99432,
+      "bias": 11936,
+      "mult": 12000,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 268800,
+      "weights": 99944,
+      "bias": 12064,
+      "mult": 12128,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 268800,
+      "b": 0,
+      "out": 883200,
+      "weights": 100016,
+      "bias": 12192,
+      "mult": 12256,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 883200,
+      "b": 0,
+      "out": 268800,
+      "weights": 100528,
+      "bias": 12320,
+      "mult": 12384,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 268800,
+      "b": 0,
+      "out": 883200,
+      "weights": 100600,
+      "bias": 12448,
+      "mult": 12512,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 883200,
+      "b": 0,
+      "out": 0,
+      "weights": 101112,
+      "bias": 12576,
+      "mult": 12577,
+      "c": 64,
+      "co": 1,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 6,
+      "a": 0,
+      "b": 0,
+      "out": 0,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 4800,
+      "ma": 0,
+      "mb": 0,
+      "lut": 12578
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 268800,
+      "weights": 101120,
+      "bias": 12833,
+      "mult": 12897,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 268800,
+      "b": 0,
+      "out": 576000,
+      "weights": 101192,
+      "bias": 12961,
+      "mult": 13025,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 268800,
+      "weights": 101704,
+      "bias": 13089,
+      "mult": 13153,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 268800,
+      "b": 0,
+      "out": 576000,
+      "weights": 101776,
+      "bias": 13217,
+      "mult": 13281,
+      "c": 64,
+      "co": 64,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 4800,
+      "weights": 102288,
+      "bias": 13345,
+      "mult": 13349,
+      "c": 64,
+      "co": 4,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 576000,
+      "b": 0,
+      "out": 24000,
+      "weights": 102320,
+      "bias": 13353,
+      "mult": 13354,
+      "c": 64,
+      "co": 1,
+      "h": 60,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 6,
+      "a": 24000,
+      "b": 0,
+      "out": 24000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 4800,
+      "ma": 0,
+      "mb": 0,
+      "lut": 13355
+    },
+    {
+      "kind": 3,
+      "a": 4800,
+      "b": 0,
+      "out": 268800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 19200,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 24000,
+      "b": 0,
+      "out": 288000,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 4800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 0,
+      "b": 0,
+      "out": 292800,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 4800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 38400,
+      "b": 0,
+      "out": 297600,
+      "weights": 102328,
+      "bias": 13610,
+      "mult": 13674,
+      "c": 128,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 297600,
+      "b": 0,
+      "out": 0,
+      "weights": 103352,
+      "bias": 13738,
+      "mult": 13802,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 103424,
+      "bias": 13866,
+      "mult": 13930,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 0,
+      "weights": 103936,
+      "bias": 13994,
+      "mult": 14058,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 0,
+      "b": 0,
+      "out": 76800,
+      "weights": 104008,
+      "bias": 14122,
+      "mult": 14186,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 76800,
+      "b": 0,
+      "out": 0,
+      "weights": 104520,
+      "bias": 14250,
+      "mult": 14251,
+      "c": 64,
+      "co": 1,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 6,
+      "a": 0,
+      "b": 0,
+      "out": 0,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 1200,
+      "ma": 0,
+      "mb": 0,
+      "lut": 14252
+    },
+    {
+      "kind": 0,
+      "a": 297600,
+      "b": 0,
+      "out": 1216,
+      "weights": 104528,
+      "bias": 14507,
+      "mult": 14571,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 1216,
+      "b": 0,
+      "out": 78016,
+      "weights": 104600,
+      "bias": 14635,
+      "mult": 14699,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 78016,
+      "b": 0,
+      "out": 1216,
+      "weights": 105112,
+      "bias": 14763,
+      "mult": 14827,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 1216,
+      "b": 0,
+      "out": 78016,
+      "weights": 105184,
+      "bias": 14891,
+      "mult": 14955,
+      "c": 64,
+      "co": 64,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 78016,
+      "b": 0,
+      "out": 1216,
+      "weights": 105696,
+      "bias": 15019,
+      "mult": 15023,
+      "c": 64,
+      "co": 4,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 78016,
+      "b": 0,
+      "out": 6016,
+      "weights": 105728,
+      "bias": 15027,
+      "mult": 15028,
+      "c": 64,
+      "co": 1,
+      "h": 30,
+      "w": 40,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 6,
+      "a": 6016,
+      "b": 0,
+      "out": 6016,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 1200,
+      "ma": 0,
+      "mb": 0,
+      "lut": 15029
+    },
+    {
+      "kind": 3,
+      "a": 1216,
+      "b": 0,
+      "out": 7232,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 4800,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 6016,
+      "b": 0,
+      "out": 12032,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 1200,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 0,
+      "b": 0,
+      "out": 13232,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 1200,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 192000,
+      "b": 0,
+      "out": 14464,
+      "weights": 105736,
+      "bias": 15284,
+      "mult": 15348,
+      "c": 256,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 14464,
+      "b": 0,
+      "out": 33664,
+      "weights": 107784,
+      "bias": 15412,
+      "mult": 15476,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 33664,
+      "b": 0,
+      "out": 52864,
+      "weights": 107856,
+      "bias": 15540,
+      "mult": 15604,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 52864,
+      "b": 0,
+      "out": 33664,
+      "weights": 108368,
+      "bias": 15668,
+      "mult": 15732,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 33664,
+      "b": 0,
+      "out": 52864,
+      "weights": 108440,
+      "bias": 15796,
+      "mult": 15860,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 52864,
+      "b": 0,
+      "out": 0,
+      "weights": 108952,
+      "bias": 15924,
+      "mult": 15925,
+      "c": 64,
+      "co": 1,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 6,
+      "a": 0,
+      "b": 0,
+      "out": 0,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 300,
+      "ma": 0,
+      "mb": 0,
+      "lut": 15926
+    },
+    {
+      "kind": 0,
+      "a": 14464,
+      "b": 0,
+      "out": 33664,
+      "weights": 108960,
+      "bias": 16181,
+      "mult": 16245,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 33664,
+      "b": 0,
+      "out": 14464,
+      "weights": 109032,
+      "bias": 16309,
+      "mult": 16373,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 14464,
+      "b": 0,
+      "out": 33664,
+      "weights": 109544,
+      "bias": 16437,
+      "mult": 16501,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 3,
+      "stride": 1,
+      "pad": 1,
+      "depthwise": 1,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 33664,
+      "b": 0,
+      "out": 14464,
+      "weights": 109616,
+      "bias": 16565,
+      "mult": 16629,
+      "c": 64,
+      "co": 64,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 1,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 14464,
+      "b": 0,
+      "out": 320,
+      "weights": 110128,
+      "bias": 16693,
+      "mult": 16697,
+      "c": 64,
+      "co": 4,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 0,
+      "a": 14464,
+      "b": 0,
+      "out": 1536,
+      "weights": 110160,
+      "bias": 16701,
+      "mult": 16702,
+      "c": 64,
+      "co": 1,
+      "h": 15,
+      "w": 20,
+      "k": 1,
+      "stride": 1,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 0,
+      "ma": 0,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 6,
+      "a": 1536,
+      "b": 0,
+      "out": 1536,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 300,
+      "ma": 0,
+      "mb": 0,
+      "lut": 16703
+    },
+    {
+      "kind": 3,
+      "a": 320,
+      "b": 0,
+      "out": 1856,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 1200,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 1536,
+      "b": 0,
+      "out": 3056,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 300,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    },
+    {
+      "kind": 3,
+      "a": 0,
+      "b": 0,
+      "out": 3356,
+      "weights": 0,
+      "bias": 0,
+      "mult": 0,
+      "c": 0,
+      "co": 0,
+      "h": 0,
+      "w": 0,
+      "k": 0,
+      "stride": 0,
+      "pad": 0,
+      "depthwise": 0,
+      "relu": 0,
+      "n": 300,
+      "ma": 1073741824,
+      "mb": 0,
+      "lut": 0
+    }
+  ],
+  "heads": [
+    {
+      "blob": "980",
+      "offset": 268800,
+      "shape": [
+        6,
+        60,
+        80
+      ],
+      "scales": [
+        0.01886492826807217,
+        0.02199034428033303,
+        0.02303924523000642,
+        0.024699404483705056,
+        0.007874015748031496,
+        0.007874015748031496
+      ]
+    },
+    {
+      "blob": "1013",
+      "offset": 7232,
+      "shape": [
+        6,
+        30,
+        40
+      ],
+      "scales": [
+        0.021583095310241218,
+        0.026763399754922222,
+        0.022365018138735312,
+        0.024718506129707878,
+        0.007874015748031496,
+        0.007874015748031496
+      ]
+    },
+    {
+      "blob": "1046",
+      "offset": 1856,
+      "shape": [
+        6,
+        15,
+        20
+      ],
+      "scales": [
+        0.07489468732218105,
+        0.07850749098409818,
+        0.023389951450618233,
+        0.07619712108702172,
+        0.007874015748031496,
+        0.007874015748031496
+      ]
+    }
+  ]
+}

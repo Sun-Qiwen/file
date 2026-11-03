@@ -1,0 +1,116 @@
+{
+  "arena_bytes": 5670976,
+  "guard_bytes": 8192,
+  "total_bytes": 5679168,
+  "cases": [
+    {
+      "name": "yolox_scene",
+      "model": "yolox",
+      "input_dtype": "int8",
+      "input_offset": 0,
+      "input_elements": 921600,
+      "first": 0,
+      "last": 169,
+      "input_sha256": "c6119a53c8621741898a546af731f67e20ea6ddd86c9470f28ae2af69090e68e"
+    },
+    {
+      "name": "yolox_blank",
+      "model": "yolox",
+      "input_dtype": "int8",
+      "input_offset": 0,
+      "input_elements": 921600,
+      "first": 0,
+      "last": 169,
+      "input_sha256": "3504b9af27b363a47f200df955b0870ce44d9260a71ee9caf1df07b519ce4d53"
+    },
+    {
+      "name": "cnn_hand",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "8b4e204d715d19aa04db759800a6c9bb966e6211ad92a5ed56756d1a680a6f09"
+    },
+    {
+      "name": "cnn_gray",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "8e6d0ad2cc245fab5998306dda845ac573212e3fd625daa68009d256340ea98c"
+    },
+    {
+      "name": "cnn_ramp",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "84c91b362a35539e6e39f16e7e05ab2c9735170196f4f811a1844d80d5f44858"
+    },
+    {
+      "name": "cnn_random",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "583552810788337ba3da483198c96b1b8d97c9676706015ced6dd4faf829d076"
+    },
+    {
+      "name": "cnn_real_0",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "ae22728173f8616dfb376ed9620d02449aeb4ba06abb2a73c236d5ca8bc60dc4"
+    },
+    {
+      "name": "cnn_real_223",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "ff2c08dbd8b3b29346893e9446bf6b5e9bfdcc95ed9325c42d95b3f698c13649"
+    },
+    {
+      "name": "cnn_real_1202",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "27c1d8e1c89bb15b680bff1314b5e78ac2bce42e2b7f6e0540bc078779d68a9c"
+    },
+    {
+      "name": "cnn_pipeline_scene",
+      "model": "cnn",
+      "input_dtype": "float32",
+      "input_offset": 3072000,
+      "input_elements": 9216,
+      "first": 169,
+      "last": 214,
+      "input_sha256": "24f840dba040fe6a9e1d5e6da68d05c5478ed4030f2249664687ba6d03b881dd"
+    }
+  ],
+  "samples": 10,
+  "warmup": 1,
+  "clock_mhz": 100,
+  "cnn_output_atol": 0.01,
+  "cnn_output_rtol": 0.003,
+  "op_atol": 2e-05,
+  "op_rtol": 2e-05,
+  "accepted_quantization_scope": "User accepted prior reported model errors; board consistency is a separate gate",
+  "control_scope": "FP32 CPU optional same-board/inputs; no historical timing substituted"
+}

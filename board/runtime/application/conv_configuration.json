@@ -1,0 +1,14 @@
+{
+  "parent": {
+    "outputs": 8,
+    "pixels": 8
+  },
+  "candidate": {
+    "outputs": 8,
+    "pixels": 8
+  },
+  "native": {
+    "outputs": 8,
+    "pixels": 8
+  }
+}

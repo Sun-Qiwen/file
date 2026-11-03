@@ -1,0 +1,105 @@
+{
+  "target_board": "PYNQ-Z2 / XC7Z020",
+  "target_scope": "all processing on PYNQ PS/PL; no external PC inference service",
+  "cnn": {
+    "source_sha256": "be8ca6d31e1ce1a4501b900c9c1616a914ea66fcfa2a18993bb866305e8e5163",
+    "epoch": 24,
+    "architecture": "heatmap96_v1",
+    "input": {
+      "shape": [
+        1,
+        1,
+        96,
+        96
+      ],
+      "dtype": "float32",
+      "range": [
+        0,
+        1
+      ],
+      "normalization": "uint8 / 255",
+      "layout": "NCHW",
+      "uint8_bytes": 9216,
+      "float32_bytes": 36864
+    },
+    "outputs": {
+      "heatmap_logits": [
+        1,
+        2,
+        48,
+        48
+      ],
+      "valid_logits": [
+        1,
+        1
+      ]
+    },
+    "point_names": [
+      "fingertip",
+      "finger_base"
+    ],
+    "normalized_point_scale": 95,
+    "heatmap_point_scale": 47,
+    "valid_probability_threshold": 0.5,
+    "output_bytes": {
+      "heatmap_logits": 18432,
+      "valid_logits": 4
+    }
+  },
+  "detector": {
+    "architecture": "yolox_hand_relu",
+    "source_sha256": "a9c6a5e2c1a41f0bc0465cebc0788685a2fa92729104d0f7d97e3d9fd57a7c24",
+    "source_hash_definition": "sha256(param_bytes + bin_bytes)",
+    "param_sha256": "cb99df9d5d58a193e8368158479e8da2f5ae9143a06c1a7bd9fcc397fa701c57",
+    "bin_sha256": "d25a180737f1bea6c4a0968fd9b203c03660406b7cbdda32fdde1ccbb941c2b3",
+    "confidence": 0.15,
+    "imgsz": 640,
+    "nms_threshold": 0.45,
+    "max_detections": 10,
+    "stride": 32,
+    "color": "BGR -> aspect resize(int) -> right/bottom pad114 to multiple32 -> RGB/255 -> (RGB-mean)/std",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input_shape": "[1,3,H,W], H/W multiples32, maxside640",
+    "outputs": {
+      "8": "[1,6,H/8,W/8]",
+      "16": "[1,6,H/16,W/16]",
+      "32": "[1,6,H/32,W/32]"
+    },
+    "decode": "cx=(dx+gx)*stride; cy=(dy+gy)*stride; width/height=exp(dw/dh)*stride; score=obj*class; no extra sigmoid",
+    "classes": {
+      "0": "hand"
+    },
+    "pc_reference_backend": "PyTorch replay of NCNN graph; not native NCNN runtime"
+  },
+  "crop": {
+    "margin": 0.35,
+    "pad_value": 128,
+    "gray": "OpenCV COLOR_BGR2GRAY",
+    "working_max_side": 384,
+    "interpolation": "two-stage working resize then96; AREA when shrinking, LINEAR when growing",
+    "matrix": "original pixel centers -> CNN pixel centers; invert to display original positions"
+  },
+  "output": {
+    "angle": "degrees(atan2(tip_x-base_x,-(tip_y-base_y))) % 360",
+    "convention": "0=up,90=right,180=down,270=left",
+    "points_order": [
+      "fingertip",
+      "finger_base"
+    ]
+  },
+  "frame_interface": {
+    "raw_RGB565": "uint16 little-endian, row-major;640x480=614400 bytes",
+    "RGB565_expansion": "R5<<3, G6<<2, B5<<3; resulting BGR uint8",
+    "PS_callable": "Pipeline.run_frame(bgr_frame,timestamp=monotonic_seconds)"
+  },
+  "model_contract_revision": "YOLOX96-20261024"
+}
