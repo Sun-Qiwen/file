@@ -1,0 +1,243 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Mon Nov  2 12:47:57 2026
+| Host         : a running 64-bit major release  (build 9200)
+| Command      : report_utilization -file D:/FPGA_learning/gesture_amd_yolo_ps_cnn_pl_classified_20261022/build/fc70/final/i01/utilization.rpt
+| Design       : n_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+-------+-------+------------+-----------+-------+
+|          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
++----------------------------+-------+-------+------------+-----------+-------+
+| Slice LUTs                 | 42782 |     0 |          0 |     53200 | 80.42 |
+|   LUT as Logic             | 40472 |     0 |          0 |     53200 | 76.08 |
+|   LUT as Memory            |  2310 |     0 |          0 |     17400 | 13.28 |
+|     LUT as Distributed RAM |  1672 |     0 |            |           |       |
+|     LUT as Shift Register  |   638 |     0 |            |           |       |
+| Slice Registers            | 44170 |     0 |          0 |    106400 | 41.51 |
+|   Register as Flip Flop    | 44170 |     0 |          0 |    106400 | 41.51 |
+|   Register as Latch        |     0 |     0 |          0 |    106400 |  0.00 |
+| F7 Muxes                   |  1052 |     0 |          0 |     26600 |  3.95 |
+| F8 Muxes                   |   269 |     0 |          0 |     13300 |  2.02 |
+| Unique Control Sets        |   936 |       |          0 |     13300 |  7.04 |
++----------------------------+-------+-------+------------+-----------+-------+
+* Warning! LUT value is adjusted to account for LUT combining.
+** Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 77    |          Yes |           - |          Set |
+| 161   |          Yes |           - |        Reset |
+| 324   |          Yes |         Set |            - |
+| 43608 |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------------------------+-------+-------+------------+-----------+-------+
+|                  Site Type                 |  Used | Fixed | Prohibited | Available | Util% |
++--------------------------------------------+-------+-------+------------+-----------+-------+
+| Slice                                      | 13217 |     0 |          0 |     13300 | 99.38 |
+|   SLICEL                                   |  8900 |     0 |            |           |       |
+|   SLICEM                                   |  4317 |     0 |            |           |       |
+| LUT as Logic                               | 40472 |     0 |          0 |     53200 | 76.08 |
+|   using O5 output only                     |    42 |       |            |           |       |
+|   using O6 output only                     | 31717 |       |            |           |       |
+|   using O5 and O6                          |  8713 |       |            |           |       |
+| LUT as Memory                              |  2310 |     0 |          0 |     17400 | 13.28 |
+|   LUT as Distributed RAM                   |  1672 |     0 |            |           |       |
+|     using O5 output only                   |     0 |       |            |           |       |
+|     using O6 output only                   |   138 |       |            |           |       |
+|     using O5 and O6                        |  1534 |       |            |           |       |
+|   LUT as Shift Register                    |   638 |     0 |            |           |       |
+|     using O5 output only                   |    72 |       |            |           |       |
+|     using O6 output only                   |   304 |       |            |           |       |
+|     using O5 and O6                        |   262 |       |            |           |       |
+| Slice Registers                            | 44170 |     0 |          0 |    106400 | 41.51 |
+|   Register driven from within the Slice    | 25003 |       |            |           |       |
+|   Register driven from outside the Slice   | 19167 |       |            |           |       |
+|     LUT in front of the register is unused |  4001 |       |            |           |       |
+|     LUT in front of the register is used   | 15166 |       |            |           |       |
++--------------------------------------------+-------+-------+------------+-----------+-------+
+
+
+3. Memory
+---------
+
++-------------------+-------+-------+------------+-----------+-------+
+|     Site Type     |  Used | Fixed | Prohibited | Available | Util% |
++-------------------+-------+-------+------------+-----------+-------+
+| Block RAM Tile    | 117.5 |     0 |          0 |       140 | 83.93 |
+|   RAMB36/FIFO*    |    91 |     0 |          0 |       140 | 65.00 |
+|     RAMB36E1 only |    91 |       |            |           |       |
+|   RAMB18          |    53 |     0 |          0 |       280 | 18.93 |
+|     RAMB18E1 only |    53 |       |            |           |       |
++-------------------+-------+-------+------------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| DSPs           |  212 |     0 |          0 |       220 | 96.36 |
+|   DSP48E1 only |  212 |       |            |           |       |
++----------------+------+-------+------------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+------------+-----------+--------+
+|          Site Type          | Used | Fixed | Prohibited | Available |  Util% |
++-----------------------------+------+-------+------------+-----------+--------+
+| Bonded IOB                  |    0 |     0 |          0 |       125 |   0.00 |
+| Bonded IPADs                |    0 |     0 |          0 |         2 |   0.00 |
+| Bonded IOPADs               |  130 |   130 |          0 |       130 | 100.00 |
+| PHY_CONTROL                 |    0 |     0 |          0 |         4 |   0.00 |
+| PHASER_REF                  |    0 |     0 |          0 |         4 |   0.00 |
+| OUT_FIFO                    |    0 |     0 |          0 |        16 |   0.00 |
+| IN_FIFO                     |    0 |     0 |          0 |        16 |   0.00 |
+| IDELAYCTRL                  |    0 |     0 |          0 |         4 |   0.00 |
+| IBUFDS                      |    0 |     0 |          0 |       121 |   0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |        16 |   0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |        16 |   0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       200 |   0.00 |
+| ILOGIC                      |    0 |     0 |          0 |       125 |   0.00 |
+| OLOGIC                      |    0 |     0 |          0 |       125 |   0.00 |
++-----------------------------+------+-------+------------+-----------+--------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+------------+-----------+-------+
+|  Site Type | Used | Fixed | Prohibited | Available | Util% |
++------------+------+-------+------------+-----------+-------+
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
+| BUFIO      |    0 |     0 |          0 |        16 |  0.00 |
+| MMCME2_ADV |    0 |     0 |          0 |         4 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |          0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |          0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |          0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |          0 |        16 |  0.00 |
++------------+------+-------+------------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+------------+-----------+-------+
+|  Site Type  | Used | Fixed | Prohibited | Available | Util% |
++-------------+------+-------+------------+-----------+-------+
+| BSCANE2     |    0 |     0 |          0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |          0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |          0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |          0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |          0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |          0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |          0 |         1 |  0.00 |
+| XADC        |    0 |     0 |          0 |         1 |  0.00 |
++-------------+------+-------+------------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+-------+----------------------+
+| Ref Name |  Used |  Functional Category |
++----------+-------+----------------------+
+| FDRE     | 43608 |         Flop & Latch |
+| LUT2     | 11307 |                  LUT |
+| LUT3     | 11295 |                  LUT |
+| LUT6     | 11232 |                  LUT |
+| LUT4     |  8126 |                  LUT |
+| CARRY4   |  5528 |           CarryLogic |
+| LUT5     |  5262 |                  LUT |
+| RAMD32   |  2314 |   Distributed Memory |
+| LUT1     |  1963 |                  LUT |
+| MUXF7    |  1052 |                MuxFx |
+| RAMS32   |   892 |   Distributed Memory |
+| SRL16E   |   760 |   Distributed Memory |
+| FDSE     |   324 |         Flop & Latch |
+| MUXF8    |   269 |                MuxFx |
+| DSP48E1  |   212 |     Block Arithmetic |
+| FDCE     |   161 |         Flop & Latch |
+| SRLC32E  |   140 |   Distributed Memory |
+| BIBUF    |   130 |                   IO |
+| RAMB36E1 |    91 |         Block Memory |
+| FDPE     |    77 |         Flop & Latch |
+| RAMB18E1 |    53 |         Block Memory |
+| PS7      |     1 | Specialized Resource |
+| BUFG     |     1 |                Clock |
++----------+-------+----------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++------------------------+------+
+|        Ref Name        | Used |
++------------------------+------+
+| n_rst_0                |    1 |
+| n_ps7_0                |    1 |
+| n_perf_0               |    1 |
+| n_memory_imp_xbar_0    |    1 |
+| n_memory_imp_auto_us_1 |    1 |
+| n_memory_imp_auto_us_0 |    1 |
+| n_memory_imp_auto_pc_3 |    1 |
+| n_memory_imp_auto_pc_2 |    1 |
+| n_memory_imp_auto_pc_1 |    1 |
+| n_memory_imp_auto_pc_0 |    1 |
+| n_engine_0             |    1 |
+| n_ctrl_imp_xbar_0      |    1 |
+| n_ctrl_imp_auto_pc_0   |    1 |
++------------------------+------+
+
+

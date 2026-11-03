@@ -1,0 +1,30 @@
+{
+  "scope": "Saved historical report text; tests create a synthetic checkpoint only to exercise hash binding",
+  "files": [
+    {
+      "file": "utilization.rpt",
+      "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\build\\reports\\fc70\\implementation\\utilization.rpt",
+      "sha256": "a5f39e5bc3b659877b1e7f6979e2463753fa83743a241b8ab496b6f166179f1f"
+    },
+    {
+      "file": "timing.rpt",
+      "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\build\\reports\\fc70\\implementation\\timing.rpt",
+      "sha256": "67e95d59d49e03de81d83f534c6a924f396b7e57ec2e46af5f8ede79d3f4f079"
+    },
+    {
+      "file": "check_timing.rpt",
+      "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\build\\reports\\fc70\\implementation\\check_timing.rpt",
+      "sha256": "56d5882aa50c280672e693e4515833938f60374672478554eb6a64a79b336450"
+    },
+    {
+      "file": "route_status.rpt",
+      "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\build\\reports\\fc70\\implementation\\route_status.rpt",
+      "sha256": "802c312ca707b60f040be6c0fe4410420da0b81ebe6cf679c3747a61e369746b"
+    },
+    {
+      "file": "drc.rpt",
+      "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\build\\reports\\fc70\\implementation\\drc.rpt",
+      "sha256": "aebd8359905711d4aa933cb7326f7fb17f433c1222724e9100461510b420ea27"
+    }
+  ]
+}

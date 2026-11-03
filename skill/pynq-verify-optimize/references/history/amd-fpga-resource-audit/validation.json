@@ -1,0 +1,76 @@
+{
+  "skill": "amd-fpga-resource-audit",
+  "date": "2026-11-01",
+  "validation_scope": "documentation, factual source binding, mathematical layout and independent offline application; no new synthesis, route or board test",
+  "source_pdf": {
+    "name": "AMD.pdf",
+    "sha256": "c6ad82acd4f7bdcd13bd412e232ed85d05f2a87dd5e2cdd04f9d219f88b569fc",
+    "physical_pages": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "printed_pages": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "same_sha_cached_extraction_reused": true,
+    "relevant_rendered_pages_visually_inspected": true
+  },
+  "static_checks": {
+    "markdown_local_links_passed": true,
+    "case_source_hashes_checked": 11,
+    "bank_bytes_bijection": 512,
+    "all_contiguous_8_by_4_windows_checked": 325,
+    "packed_byte_roundtrip_passed": true,
+    "scope": "address/layout proof only; not HLS mapping, timing or a new board test"
+  },
+  "non_power_of_two_layout": {
+    "logical_bytes": 108,
+    "allocated_bytes": 144,
+    "padding_bytes": 36,
+    "all_contiguous_3_by_3_windows_checked": 70,
+    "unique_locations": 108,
+    "roundtrip_and_padding_passed": true,
+    "scope": "offline address proof, no synthesis or hardware claim"
+  },
+  "independent_application": {
+    "agent": "/root/resource_skill_application",
+    "scenarios": [
+      "FIR resource reduction versus placed-only hold failure and CELL_BLOAT",
+      "12-channel 9-pixel image scratch bank/tail/loader proof and generic fallback",
+      "PYNQ incomplete performance evidence, read-only authorization and transfer requirements"
+    ],
+    "result": "all three scenarios produced usable bounded diagnoses; no hardware success inferred",
+    "critical_unresolved": 0,
+    "important_unresolved": 0,
+    "minor_unresolved": 0,
+    "minor_closed": "added padded non-power-of-two layout, loader port conditions and 7-series architecture boundary; independently re-reviewed"
+  },
+  "no_guidance_control": {
+    "agent": "/root/resource_skill_baseline",
+    "result": "baseline already recognized the key physical, numerical and authorization constraints; no unsafe acceptance observed",
+    "interpretation": "reference/application validation, not evidence that the new skill caused behavioral improvement"
+  },
+  "limitations": [
+    "single application sample per scenario, not a statistical reliability study",
+    "primary PDF and case source hashes checked by author; independent application evaluator read the standalone skill only",
+    "original project hardware evidence is referenced, not rerun or embedded in this documentation package",
+    "no second-board or different-project synthesis/hardware validation",
+    "original collaboration transcripts and complete engineering deliverables remain part of the competition project, not replaced by this skill"
+  ],
+  "files_sha256": {
+    "agents/openai.yaml": "aa09e3f440bbe2ebc52635ccedf7e87e52048f1fcd452c59ca6a5f5fff81754d",
+    "license.txt": "54dd5b875b8323be76e0531f683aa5c0db7127b7ec61cf2951c94961760915f0",
+    "references/case-result.json": "f36322a418460c18943040459397266041b6fc00c5ac3abeadf5ddd9610ca77c",
+    "references/case-study.md": "5d6b45209e16a78dc831ba2e11e34353755d22f6803db13767a998acca1e30f7",
+    "references/competition.md": "4f0c1707c295b423e4eeefba124c3b8504a80684573783c38394d32ea0bded31",
+    "references/methods.md": "e5d99cf83f0caea31f111d4f92355f34051cf3d20a84057c49372c4a8e01cb43",
+    "references/workflow.md": "0c0e68e333a796673b64426f8b10af97ce93965cd7eca000f97e307a36e0fa21",
+    "SKILL.md": "27db3eb7a416dd50810e56dbbf0c29ab48805d8d72af9a407094fb7a48df4bf6"
+  },
+  "skill_index_sha256": "737828c6da80bff2118908623fe50cd2512aaaadbebe8327a903ea943f3f38b6"
+}

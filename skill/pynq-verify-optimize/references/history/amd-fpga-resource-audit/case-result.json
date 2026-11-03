@@ -1,0 +1,89 @@
+{
+  "scope": "verified project case, not a guarantee for other designs or boards",
+  "device": "xc7z020clg400-1",
+  "board": "PYNQ-Z2",
+  "tools": "Vivado/Vitis 2025.2",
+  "clock_mhz": 100,
+  "mac_parallelism": 32,
+  "baseline": "cp65",
+  "candidate": "ac66",
+  "stage": "routed",
+  "baseline_resource": {
+    "slice": 12400.0,
+    "lut": 41932.0,
+    "ff": 47941.0,
+    "controls": 1426.0,
+    "dsp": 181.0,
+    "bram": 82.0,
+    "wns": 0.072,
+    "whs": 0.023
+  },
+  "candidate_resource": {
+    "slice": 10983.0,
+    "lut": 35306.0,
+    "ff": 39459.0,
+    "controls": 845.0,
+    "dsp": 138.0,
+    "bram": 85.0,
+    "wns": 0.408,
+    "whs": 0.011
+  },
+  "slice_reduction_percent": 11.42741935483871,
+  "board_rows": 530,
+  "formal_sequence": "cp65 -> ac66 -> cp65",
+  "warmup": 1,
+  "effective_samples_per_main_configuration": 10,
+  "comparisons": {
+    "yolox_ps_ms": {
+      "parent_ms": 2414.257906,
+      "candidate_ms": 1859.6494871000002,
+      "parent_retest_ms": 2413.459264,
+      "reduction_ms": 554.2090978999997,
+      "reduction_percent": 22.959468352616845,
+      "parent_drift_ms": -0.7986419999997452,
+      "candidate_all_below_parents": true,
+      "median_reduction_ms": 551.7756312500001
+    },
+    "full_link_ms": {
+      "parent_ms": 3599.8966599,
+      "candidate_ms": 2994.7901345,
+      "parent_retest_ms": 3571.0113195,
+      "reduction_ms": 590.6638552,
+      "reduction_percent": 16.473893038282206,
+      "parent_drift_ms": -28.885340400000132,
+      "candidate_all_below_parents": true,
+      "median_reduction_ms": 577.4730082499996
+    },
+    "cnn_hardware_ms": {
+      "parent_ms": 564.400985,
+      "candidate_ms": 540.732697,
+      "parent_retest_ms": 563.84362,
+      "reduction_ms": 23.389605499999902,
+      "reduction_percent": 4.14619407818926,
+      "parent_drift_ms": -0.5573650000000043,
+      "candidate_all_below_parents": true,
+      "median_reduction_ms": 23.221077500000092
+    }
+  },
+  "bitstream_sha256": "1f1d8aaa4342e9517095e173776d74bead2287e294ff8c39d6e3f2c8b277964c",
+  "hwh_sha256": "d03a0448c2d1605741c3b0174d9003f516c6b0d519e3e66b0efdaa42a30816b0",
+  "report_sha256": "5e02541fdf82c734732634a2a7975d5467f13787f3a34644554a057d1794e674",
+  "review_fingerprint": "0616d616bcc45950f693c09990234bb43e2f78bc0f5cd41fdd1a4f33316f4cff",
+  "source_file_sha256": {
+    "report/runs/add_conv_mem_20261101_01/report.md": "5e02541fdf82c734732634a2a7975d5467f13787f3a34644554a057d1794e674",
+    "sim/runs/add_conv_mem_20261101_01/accepted.json": "98dc3efacebf82c69fa29fc03a57cb1f658e4e35550bfed972107cf4da2f6e68",
+    "sim/runs/add_conv_mem_20261101_01/final_delivery_verified.json": "facd72411902189e8609075e4286f2be77fb2c8d96bfc1ee4bef0ae323164eee",
+    "sim/runs/add_conv_mem_20261101_01/review_final.json": "d4e651b5ee70c56d132ee5d90936196255f333c58abc5c33e2f35a911ca04216",
+    "sim/runs/add_conv_mem_20261101_01/resource_audit.json": "e53c068729952cee2fad343a24bbc62a22d80bba9471e12201231e1ad83b3eed",
+    "sim/runs/add_conv_mem_20261101_01/performance_b01.json": "c4b0695d85c7f437b41e5bb0b1cf35498ba7ae8b936756e3376537665c7202c8",
+    "sim/runs/add_conv_mem_20261101_01/cnn_assessment.json": "18f2a1d80865e0004e4747bbfc95023972c767613f9c42d2e16bc2242bd28c3d",
+    "sim/runs/add_conv_mem_20261101_01/board_audit_b01.json": "0a39eaeb5a00b888722291ddab48788ef51ecaacbeab65fbdf71294e78081a57",
+    "sim/runs/add_conv_mem_20261101_01/b01_fetch_identity.json": "64b761c6f42e75827181d4ba87674fd957c02bf26c44e2c2a87b6ebd378f8720",
+    "sim/runs/cp65_board_20261101_02/accepted.json": "17eb8e1779970231b55ccaa45bca9ae6dd7e1b7d62325527d639fc9bcacffa86",
+    "sim/runs/slice_compaction_20261101_01/final_verification.json": "8ee86e2bf2909fceb9b5a4511fb585af3f7e77df716e7272be301f85e9c99fb6"
+  },
+  "source_path_base": "original project root; not required for adapting the standalone method",
+  "attribution": "combined Add/memory/resource/layout candidate; not isolated resource-compaction speedup",
+  "physical_tests_on_other_boards": false,
+  "skill_authoring_reconnected_board": false
+}

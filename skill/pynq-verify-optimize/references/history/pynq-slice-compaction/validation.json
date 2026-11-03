@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "validation_kind": "Skill authoring and tool validation; no new hardware application run",
+  "report_parser_actual_case": "cr64/i01 and cp65/bd02; candidate supplied execution/output seal matches; parent snapshot unbound to end-of-run output seal",
+  "helper_tests": {
+    "count": 19,
+    "result": "PASS",
+    "scope": "Actual saved report text with synthetic DCP/receipt fixtures, plus mock PYNQ; not hardware execution"
+  },
+  "read_only_vivado_test": {
+    "version": "2025.2",
+    "exit_code": 0,
+    "input_unchanged": true,
+    "site_counts": {
+      "part": "xc7z020clg400-1",
+      "device_slice_sites": "13300",
+      "occupied_slice_sites": "12400",
+      "pblock": "compact_logic",
+      "ranges": "SLICE_X0Y0:SLICE_X107Y149",
+      "is_soft": "0",
+      "allowed_slice_sites": "12400",
+      "reserved_slice_sites": "900",
+      "occupied_outside_region": "0"
+    }
+  },
+  "agent_test": {
+    "baseline_gaps": [
+      "Windows-only certutil SHA example",
+      "Pipeline/state preservation evidence and physical options underspecified"
+    ],
+    "with_skill_result": "PASS within one new image-filter dry-run;125MHz/16-lane constraints preserved",
+    "not_claimed": "Cross-board hardware, runtime acceleration or general success probability"
+  },
+  "evidence_sha256": {
+    "baseline_scenario.md": "6d1692323e083013cda75f344cc6db93ae7a16b5cfe8f73bc6dc7a07cad9ed45",
+    "baseline_response.md": "0ccc88030937b26b065444585246129b9048578a19a7bfe84407f7ad22e87184",
+    "baseline_evaluation.json": "47e571e2e40e806eb7a8c6d79c0e6b94660c83c33cbbf1afcc3ff1a23fb6e960",
+    "green_response.md": "4f82420e87cd5cfd61ccf3f9fbb1a6130710fcf9def63a9fdf4cdd7e9f4c5243",
+    "green_evaluation.json": "8399f9a386d1d883329ad95da5fc17a3d5df1f05965926d735c03ce00b9fa58a",
+    "test_helpers.py": "d2006a679fb8ab4c742dab91bfe423a353119cce2290776912298ee535de6600",
+    "helper_tests_red_02.txt": "b4ddcdd5956616732759e6a39edfcf54a525460ec6e5085aff0b152556161cea",
+    "helper_tests_green.txt": "007120662779fd3acf101ea66d0a06c697de6e1dd948a8ebd3c69507209e4a49",
+    "baseline_reports_02.json": "f812cdacc5356c36edd14eda5efd9bda043daced97f0c4bde1a922819a61bbbf",
+    "candidate_reports_01.json": "0de954719037fedcb54be833bb054387661b1ea59ee84c250112c89fec46a343",
+    "vivado_sites_01/execution.json": "19cdaafe4354a501a908e2a222c3f0548c58391c04774c57dbac3b182b2d3eb5",
+    "vivado_sites_01/sites.txt": "10269f7bf64278353a860c9ad8ffb2ec196dfbabe1adee2ed53565b545ba41c3"
+  },
+  "scripts_sha256": {
+    "check_reports.py": "0db27bc83770fd6ff7831bc8bc0cb7b9a6d5172a07d758fd3b11b47c17fb58c8",
+    "collect_sites.tcl": "8ffe5dadbd2478c48d5c3dfbbbc8f65f107be45b302c6237046335927c939f07",
+    "pynq_snapshot.py": "48b3691ed3a05b61757e148db90ad2efcc816993090e13eb41fe9ab2e2ad71be"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ 验证与性能优化"
+  short_description: "核验 Overlay、黄金参考及性能证据，按资源与时序约束推进可复用优化流程"
+  default_prompt: "使用 $pynq-verify-optimize 分析当前 PYNQ 项目的正确性、耗时与资源证据，并在已授权范围内推进验证和优化。"

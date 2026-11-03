@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "purpose": "填写当前项目真实契约；null表示未知，不能当作默认通过",
+  "build_id": null,
+  "board": {"model": null, "device_part": null, "pynq_version": null, "tool_version": null},
+  "allowed_scope": "local_only",
+  "artifacts": {
+    "bit": {"path": null, "sha256": null},
+    "hwh": {"path": null, "sha256": null},
+    "software_manifest_sha256": null,
+    "source_manifest_sha256": null
+  },
+  "clocks": [{"name": null, "expected_hz": null, "observed_hz": null}],
+  "interfaces": [{
+    "logical_name": null, "ip_path": null, "vlnv": null,
+    "base_address": null, "address_range_bytes": null,
+    "control_protocol": null, "device_address_bits": null,
+    "completion_and_drain_condition": null,
+    "registers": [{"name": null, "offset_bytes": null, "width_bits": null, "access": null}]
+  }],
+  "buffers": [{
+    "name": null, "dtype": null, "shape": null, "layout": null, "alignment_bytes": null,
+    "direction": null, "aliasing": null, "cache_policy": null, "owner_until": null
+  }],
+  "numerics": {
+    "reference_id": null, "quantization_and_rounding": null,
+    "outputs": [{"name": null, "dtype": null, "shape": null, "mode": null, "atol": null, "rtol": null}]
+  },
+  "performance": {
+    "timing_boundary": null, "input_id": null, "warmup_count": null,
+    "measured_count": null, "drift_threshold_pct": null, "target_ms": null,
+    "counter_definitions_and_overlap": null
+  },
+  "resources": {
+    "actual_limits_from_device": null, "project_reserve": null,
+    "preserve_parallelism": null, "allowed_tradeoffs": null
+  },
+  "recovery": {"baseline_artifact_id": null, "quiesce_method": null, "restore_method": null}
+}

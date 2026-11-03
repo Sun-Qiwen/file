@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "case": "PYNQ-Z2 / YOLOX same-source physical compaction",
+  "part": "xc7z020clg400-1",
+  "vivado": "2025.2",
+  "baseline": "cr64",
+  "candidate": "cp65 bd02",
+  "clock_mhz": 100,
+  "macs": 32,
+  "baseline_resources": {
+    "slice": 13253.0,
+    "lut": 42374.0,
+    "ff": 47959.0,
+    "controls": 1432.0,
+    "dsp": 181.0,
+    "bram36_equivalent": 82.0
+  },
+  "candidate_resources": {
+    "slice": 12400.0,
+    "lut": 41932.0,
+    "ff": 47941.0,
+    "controls": 1426.0,
+    "dsp": 181.0,
+    "bram36_equivalent": 82.0
+  },
+  "comparison": {
+    "saved_slices": 853.0,
+    "reduction_of_parent_used_percent": 6.436278578435071,
+    "actual_reported_reduction": true,
+    "both_supplied_run_seals_match": false,
+    "resource_delta": {
+      "slice": -853.0,
+      "lut": -442.0,
+      "ff": -18.0,
+      "controls": -6.0,
+      "dsp": 0.0,
+      "bram36_equivalent": 0.0
+    },
+    "scope": "Area comparison only. Check project resource limits, source/function and board evidence separately."
+  },
+  "timing": {
+    "wns_ns": 0.072,
+    "whs_ns": 0.023,
+    "wpws_ns": 3.75
+  },
+  "device_slice_sites": 13300,
+  "allowed_slice_sites": 12400,
+  "reserved_slice_sites": 900,
+  "occupied_slice_sites": 12400,
+  "fully_routed_nets": 88362,
+  "route_errors": 0,
+  "all_twelve_check_timing_categories_zero": true,
+  "physical_artifacts": {
+    "utilization.rpt": "54347aab9fa36069e8e1fc4af3c9767c874381240b70f3d9fbf005bdb4b35a9f",
+    "timing.rpt": "6a88f72f2a93c7c775f0b174172861f898476499f7b5f8e33f29617cb7dbe029",
+    "check_timing.rpt": "3c4b6c53d75ce93612eb99c0815b61abdc69dc3794d2e11c2ee0a321b7a57bba",
+    "route_status.rpt": "3683f8f69fbf2761757377370713a59af4999f15566a9cda36ed3ff3452ddc3a",
+    "drc.rpt": "5aba911051636fa418b3f34260316ad705c4fd51fa7b7a53cee033b746c51054",
+    "routed.dcp": "1642005f603b4aa440a3216b07b771656788b1ead455cb275d739bbfd71d2e89"
+  },
+  "evidence_sha256": {
+    "build/cp65/bd02/execution.json": "3fd68b9b04a03571852120ead06699aefd67d22b48b146587c587a28a9391322",
+    "sim/runs/slice_compaction_20261101_01/final_review_20261101_01.json": "5e40ef11fff67fae8e6b9d562dfe786feb1d37106e934f427d71809cc6ee362f",
+    "sim/runs/cp65_board_20261101_02/accepted.json": "17eb8e1779970231b55ccaa45bca9ae6dd7e1b7d62325527d639fc9bcacffa86",
+    "sim/runs/cp65_board_20261101_02/review_final.json": "76f6c1aa6c2b489b33c0c7aab38f6dfa5f6fe1fcd7cfcfa5ffb2f53d26b3f5dd",
+    "report/runs/cp65_board_20261101_02/report.md": "f15f7294335df54f365c9bc45aaa311dee14b3f304c3c014d8a15561e445b45d",
+    "build/cp65/e_bd02/yolox_int8.bit": "e0f908c6f9f770b7be01bc703d59dc6fdbfd0f842e460ae857bfaab9f45784ec",
+    "build/cp65/e_bd02/yolox_int8.hwh": "9f6893d95545644ba4ecfed24b3dcc673ab3e077438b2b73383a6f0ddcbbc000"
+  },
+  "board": {
+    "accepted": true,
+    "comparison": "rz63 -> cp65 -> rz63",
+    "records": 761,
+    "effective_samples_per_main_configuration": 10,
+    "warmup_samples_per_main_configuration": 1,
+    "same_boot": true,
+    "clock_mhz": 100
+  },
+  "limitations": [
+    "Resource improvement is cr64 -> cp65; board timing comparison is rz63 -> cp65 -> rz63 and includes earlier Concat algorithm changes.",
+    "No per-step routed ablation and no isolated cr64 -> cp65 -> cr64 board timing experiment.",
+    "7922 declared primitive parameters remain unobservable; opaque encrypted internal function not independently proved.",
+    "One physical board/7-series/Vivado2025.2; no second-board, other-topic or UltraScale hardware claim.",
+    "Not a promise of 6.44 percent on other projects or a global optimum."
+  ]
+}

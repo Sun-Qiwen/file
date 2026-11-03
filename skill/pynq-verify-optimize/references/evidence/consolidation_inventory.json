@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-02",
+  "archive_directory": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01",
+  "scope": "All original skill files retained in external archive; mapped destinations are independent of archive for operation",
+  "files": [
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "agents/openai.yaml",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\agents\\openai.yaml",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\agents\\openai.yaml",
+      "bytes": 386,
+      "sha256": "aa09e3f440bbe2ebc52635ccedf7e87e52048f1fcd452c59ca6a5f5fff81754d",
+      "action": "routing metadata unified; original archived",
+      "destinations": [
+        "agents/openai.yaml",
+        "SKILL.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "license.txt",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\license.txt",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\license.txt",
+      "bytes": 1298,
+      "sha256": "54dd5b875b8323be76e0531f683aa5c0db7127b7ec61cf2951c94961760915f0",
+      "action": "license retained",
+      "destinations": [
+        "references/evidence/resource_audit_license.txt"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "README.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\README.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\README.md",
+      "bytes": 5963,
+      "sha256": "2114cc4a819e3a29600c8053ef1f943b3840456ef9f2d4096b6583ab8526e7ed",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "references/case-result.json",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\references\\case-result.json",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\references\\case-result.json",
+      "bytes": 4119,
+      "sha256": "f36322a418460c18943040459397266041b6fc00c5ac3abeadf5ddd9610ca77c",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/history/amd-fpga-resource-audit/case-result.json"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "references/case-study.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\references\\case-study.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\references\\case-study.md",
+      "bytes": 5811,
+      "sha256": "5d6b45209e16a78dc831ba2e11e34353755d22f6803db13767a998acca1e30f7",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/history/amd-fpga-resource-audit/case-study.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "references/competition.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\references\\competition.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\references\\competition.md",
+      "bytes": 2654,
+      "sha256": "3923f4ebe801ab20b7054a721117d6f9721066cdf95e8bc664b27c0d3e60d2e6",
+      "action": "submission guidance deduplicated",
+      "destinations": [
+        "references/submission.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "references/methods.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\references\\methods.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\references\\methods.md",
+      "bytes": 7603,
+      "sha256": "e5d99cf83f0caea31f111d4f92355f34051cf3d20a84057c49372c4a8e01cb43",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "references/validation.json",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\references\\validation.json",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\references\\validation.json",
+      "bytes": 3769,
+      "sha256": "983700cd7411a5eea503593da63e0f3764cef38e2ce5e0ab8b747286948ca120",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/history/amd-fpga-resource-audit/validation.json"
+      ]
+    },
+    {
+      "skill": "amd-fpga-resource-audit",
+      "original_relative_path": "references/workflow.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-resource-audit\\references\\workflow.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-resource-audit\\references\\workflow.md",
+      "bytes": 4098,
+      "sha256": "833cc5017b8836542751bf0d61725d3c2b2fb8f218880abb90ffaad68ce8836f",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-slice-optimization",
+      "original_relative_path": "README.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-slice-optimization\\README.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-slice-optimization\\README.md",
+      "bytes": 5951,
+      "sha256": "25f9b12ea10659bc3514ed2d615d8e70a5c937b24c4bab52f63cefd34b56e88e",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-slice-optimization",
+      "original_relative_path": "references/contest_requirements.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-slice-optimization\\references\\contest_requirements.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-slice-optimization\\references\\contest_requirements.md",
+      "bytes": 3194,
+      "sha256": "49f75692fd03a3384943ec15e481f92c4b60860b184da2a2a7e904ffb5b675b2",
+      "action": "submission guidance deduplicated",
+      "destinations": [
+        "references/submission.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-slice-optimization",
+      "original_relative_path": "references/prompt_workflow.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-slice-optimization\\references\\prompt_workflow.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-slice-optimization\\references\\prompt_workflow.md",
+      "bytes": 5152,
+      "sha256": "3f271866fc6bb3f8e91ed0ee656b41bfb9175ca4704bd60aeb9d972ebc5570cc",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "amd-fpga-slice-optimization",
+      "original_relative_path": "references/verified_cases.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\amd-fpga-slice-optimization\\references\\verified_cases.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\amd-fpga-slice-optimization\\references\\verified_cases.md",
+      "bytes": 6078,
+      "sha256": "ea788dafdd53117bd198e26ccc2cc099189c985d2391357ad5662fa210ef0e17",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/history/amd-fpga-slice-optimization/verified_cases.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "agents/openai.yaml",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\agents\\openai.yaml",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\agents\\openai.yaml",
+      "bytes": 343,
+      "sha256": "7a395fe98aaa9f50a600701a4f2470fa08b577f5cdfe338e97caa63eca6ff24d",
+      "action": "routing metadata unified; original archived",
+      "destinations": [
+        "agents/openai.yaml",
+        "SKILL.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "license.txt",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\license.txt",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\license.txt",
+      "bytes": 1312,
+      "sha256": "48213845ebb95254a34ca6d80b5906d4e390d0933f5ea8be8cd6567b9dfb503b",
+      "action": "license retained",
+      "destinations": [
+        "references/evidence/slice_case_license.txt"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "README.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\README.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\README.md",
+      "bytes": 5020,
+      "sha256": "1e08a885db7987e19d1ba4b205bcb8a32f70e2a76dc7ef4945c5cc68fa575577",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "references/case-study.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\case-study.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\case-study.md",
+      "bytes": 2927,
+      "sha256": "8ac56623ee59dd51a7dc2299369a449e6f7112c4a3342448410b5bb635eeb767",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/evidence/slice_case.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "references/case_result.json",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\case_result.json",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\case_result.json",
+      "bytes": 3653,
+      "sha256": "fd795caac7c0401ce00861f9fa8ecf6de541f9bdb224a7769778722836aab0a0",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/history/pynq-slice-compaction/case_result.json"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "references/competition.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\competition.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\competition.md",
+      "bytes": 1986,
+      "sha256": "f0b25ec33b70faaa7d5490aad062be18019b4f14bb5c301b92aa469967c13c5e",
+      "action": "submission guidance deduplicated",
+      "destinations": [
+        "references/submission.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "references/tools.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\tools.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\tools.md",
+      "bytes": 4153,
+      "sha256": "b35629b07ae2295763b66b7785fc1bb21f05f0ad2d739de521fc6ae94395b629",
+      "action": "tool usage and limitations adapted",
+      "destinations": [
+        "references/resource-tools.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "references/validation.json",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\validation.json",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\validation.json",
+      "bytes": 2852,
+      "sha256": "18737918e1c85a60f617309278afe0459f785b407f8916007590c4d7da9f21fe",
+      "action": "historical evidence retained, not rerun",
+      "destinations": [
+        "references/history/pynq-slice-compaction/validation.json"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "references/workflow.md",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\workflow.md",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\workflow.md",
+      "bytes": 5174,
+      "sha256": "4c393e24d32a76472af4ad006607afdd15a9215fcc923ff79c495f8c0cc991cc",
+      "action": "methods and failure guidance distilled",
+      "destinations": [
+        "SKILL.md",
+        "references/resource-optimization.md",
+        "references/workflow.md",
+        "references/legacy-cases.md",
+        "assets/task-prompt.md"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "scripts/check_reports.py",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\scripts\\check_reports.py",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\scripts\\check_reports.py",
+      "bytes": 8632,
+      "sha256": "0db27bc83770fd6ff7831bc8bc0cb7b9a6d5172a07d758fd3b11b47c17fb58c8",
+      "action": "tool copied byte-for-byte",
+      "destinations": [
+        "scripts/check_reports.py"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "scripts/collect_sites.tcl",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\scripts\\collect_sites.tcl",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\scripts\\collect_sites.tcl",
+      "bytes": 2076,
+      "sha256": "8ffe5dadbd2478c48d5c3dfbbbc8f65f107be45b302c6237046335927c939f07",
+      "action": "tool copied byte-for-byte",
+      "destinations": [
+        "scripts/collect_sites.tcl"
+      ]
+    },
+    {
+      "skill": "pynq-slice-compaction",
+      "original_relative_path": "scripts/pynq_snapshot.py",
+      "source_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\scripts\\pynq_snapshot.py",
+      "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\scripts\\pynq_snapshot.py",
+      "bytes": 2511,
+      "sha256": "48b3691ed3a05b61757e148db90ad2efcc816993090e13eb41fe9ab2e2ad71be",
+      "action": "tool copied byte-for-byte",
+      "destinations": [
+        "scripts/pynq_snapshot.py"
+      ]
+    }
+  ]
+}

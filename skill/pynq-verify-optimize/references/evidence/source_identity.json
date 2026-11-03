@@ -1,0 +1,15 @@
+[
+  {
+    "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\report\\performance\\fc70.md",
+    "snapshot": "fc70_report.md",
+    "sha256": "014296b609dc1dc64b42cb051adade0c85f96b462aa9f7f20f8c6434852a41b7",
+    "verification": "report copied byte-for-byte; historical experiments not rerun"
+  },
+  {
+    "source": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\gesture_pointing_hdmi\\skill\\pynq-slice-compaction\\references\\case-study.md",
+    "snapshot": "slice_case.md",
+    "sha256": "8ac56623ee59dd51a7dc2299369a449e6f7112c4a3342448410b5bb635eeb767",
+    "verification": "report copied byte-for-byte; historical experiments not rerun",
+    "archive_path": "C:\\Users\\zhaohy\\Documents\\Codex\\2026-10-29\\new-chat\\outputs\\skill_history_20261102_01\\pynq-slice-compaction\\references\\case-study.md"
+  }
+]
